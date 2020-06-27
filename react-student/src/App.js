@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import History from "./components/History/History";
+import Unitec from "./components/Unitec/Unitec";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <NavBar></NavBar>
+        <Switch>
+          <Route exact path="/home">
+            <div className="container-fluid">
+              <Home></Home>
+            </div>
+          </Route>
+          <Route exact path="/unitec">
+            <div className="container-fluid">
+              <Unitec></Unitec>
+            </div>
+          </Route>
+          <Route exact path="/history">
+            <div className="container-fluid">
+              <History></History>
+            </div>
+          </Route>
+          <Redirect to="/home"></Redirect>
+        </Switch>
+        <Footer></Footer>
+      </Router>
+    </React.Fragment>
   );
 }
 
