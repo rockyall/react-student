@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import anime from "animejs";
 import { Cookies } from "react-cookie";
 
 class UnitecContent extends Component {
@@ -10,8 +9,7 @@ class UnitecContent extends Component {
 
   onHandleClick = (param) => {
     console.log("clicking url activite o resource", param);
-    window.open(param, "_blank")
-    
+    window.open(param, "_blank");
   };
 
   render() {

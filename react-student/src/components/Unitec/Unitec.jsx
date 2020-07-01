@@ -80,7 +80,7 @@ class Unitec extends Component {
           <th className="text-center" scope="row">
             {index + 1}
           </th>
-          {/* <td>{resp._id}</td> */}
+          <td>{resp._id}</td>
           <td>{resp.NameClass}</td>
           <td className="text-center">{resp.lstSemana.length}</td>
           <td>{resp.Estado}</td>
@@ -126,18 +126,17 @@ class Unitec extends Component {
     });
     return (
       <React.Fragment>
-        {/* <h2>Data will go here</h2> */}
         <div className="row">
           <div className="col"></div>
         </div>
         <div className="row">
           <div className="col-1 col-sm"></div>
-          <div className="col-md-12">
+          <div className="col-md-12 table-responsive-sm">
             <table className="table table-striped table-sm">
               <thead>
                 <tr>
                   <th scope="col">No</th>
-                  {/* <th scope="col">id</th> */}
+                  <th scope="col">id</th>
                   <th scope="col">Clase</th>
                   <th scope="col">Semana</th>
                   <th scope="col">Estado</th>
@@ -180,10 +179,6 @@ class Unitec extends Component {
           </div>
           <div className="col-1"></div>
         </div>
-
-        {/* <ion-icon style={this.style} name="logo-react" size="large"></ion-icon>
-        <ion-icon style={this.style} name="logo-nodejs" size="large"></ion-icon>
-        <ion-icon style={this.style} name="logo-github" size="large"></ion-icon> */}
       </React.Fragment>
     );
   }

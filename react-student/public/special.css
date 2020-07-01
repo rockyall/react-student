@@ -1,0 +1,72 @@
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fontClass {
+  font-family: Roboto Slab, Times New Roman, serif;
+}
+
+.btnCustom {
+  line-height: 1.3333333;
+  background-color: #2c363f;
+  border-color: #2c363f;
+  color: aliceblue;
+  border-radius: 0px;
+  /* box-shadow: 0 2px 2px 0 #2c363f, 0 3px 1px -2px #2c363f, 0 1px 5px 0 #2c363f; */
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: fixed;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 0%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #cef;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
