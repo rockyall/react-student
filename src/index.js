@@ -4,7 +4,9 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { CookiesProvider } from "react-cookie";
+import "./fonts/Nunito/Nunito-Light.ttf";
 import "bootstrap/dist/css/bootstrap.min.css";
+import anime from "animejs/lib/anime.es";
 
 ReactDOM.render(
   <React.StrictMode>

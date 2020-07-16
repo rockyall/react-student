@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 import { Cookies } from "react-cookie";
+import anime from "animejs";
 
 class UnitecContent extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
+  componentDidMount = () => {
+    anime({
+      targets: ".cardContent",
+      translateY: 20,
+      endDelay: 500,
+    });
+  };
 
   onHandleClick = (param) => {
     console.log("clicking url activite o resource", param);
@@ -49,7 +58,7 @@ class UnitecContent extends Component {
     });
     return (
       <React.Fragment>
-        <div className="container-fluid ">
+        <div id="cardContent" className="container-fluid">
           <div className="row p-3 text-center" style={{ display: "block" }}>
             <h5>Contenido | Semana {this.props.CurrentSemana.Semana}</h5>
           </div>

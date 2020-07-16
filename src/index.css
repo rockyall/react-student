@@ -1,13 +1,138 @@
-body {
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+    url(./fonts/Nunito/Nunito-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Nunitolight";
+  src: local("Nunitolight"),
+    url(./fonts/Nunito/Nunito-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Robot";
+  src: local("Robot"),
+    url(./fonts/Roboto_Mono/static/RobotoMono-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "RobotNormal";
+  src: local("RobotNormal"),
+    url(./fonts/Roboto_Mono/static/RobotoMono-Medium.ttf) format("truetype");
+}
+
+#root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Robot";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nav-link {
+  font-size: 12px;
+}
+
+table {
+  text-align: center;
+  background-color: white;
+}
+
+header {
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+
+nav {
+  transition: top 0.3s;
+}
+
+nav .navbar {
+  background-color: transparent !important;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.section {
+  font-family: Robot;
+}
+
+div .card {
+  font-family: RobotNormal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(2, 2, 2);
+}
+.day {
+  color: #9fd0ae;
+}
+
+.C-BrandIcon {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.C-BrnadIcon ion-icon {
+  color: white;
+}
+
+.NavHover a:hover {
+  text-decoration: underline;
+}
+
+.header-img {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/BeeingCreative2.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bbtn-1 {
+  background-color: rgb(49, 49, 49);
+  border: 2px solid rgba(58, 58, 58, 0.705);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 5px;
+  font-size: 12px;
+  border-radius: 4px;
+  box-shadow: 5px 3px black;
+}
+.bbtn-1:hover {
+  box-shadow: 5px 4px rgb(75, 75, 75);
+  color: #ffffff;
+}
+
+.bbtn-2 {
+  background-color: rgb(49, 49, 49);
+  border: 2px solid rgba(58, 58, 58, 0.705);
+  color: rgb(236, 219, 66);
+  padding: 10px;
+  margin: 5px;
+  font-size: 12px;
+  border-radius: 4px;
+  box-shadow: 5px 3px black;
+}
+.bbtn-2:hover {
+  box-shadow: 5px 4px rgb(75, 75, 75);
+  color: #ffffff;
+}
+
+div .card {
+  transition: 3;
+  box-shadow: 10px 8px rgb(75, 75, 75);
+}
+div .card:hover {
+  box-shadow: 10px 8px rgb(136, 136, 136);
 }

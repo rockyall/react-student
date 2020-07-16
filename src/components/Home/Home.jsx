@@ -1,19 +1,32 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import anime from "animejs";
+import Works from "./Works";
+import About from "./About";
 
 const Home = () => {
+  const [todos, setTodos] = useState();
+  const [nextTodoId, setNextTodoId] = useState(0);
+  const [newTodoLabel, setNewTodoLabel] = useState("");
   let history = useHistory();
 
   function handleClick() {
     history.push("/history");
   }
 
+  useEffect(() => {
+    anime({
+      targets: ".bbtn-1",
+      translateY: -20,
+      endDelay: 100,
+    });
+  });
+
   return (
     <React.Fragment>
-      <h5>the home goes here</h5>
-      <button className="btn btn-info" onClick={handleClick}>
-        Class History
-      </button>
+      <div class="header-img"></div>
+      <Works></Works>
+      <About></About>
     </React.Fragment>
   );
 };

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import UnitecDetail from "./UnitecDetail";
 import UnitecContent from "./UnitecContent";
 import { Cookies } from "react-cookie";
+import anime from "animejs";
 
 class Unitec extends Component {
   constructor(props) {
@@ -34,8 +35,13 @@ class Unitec extends Component {
     };
 
     this.componentDidMount = () => {
+      anime({
+        targets: ".row",
+        translateY: 70,
+        endDelay: 300,
+      });
       let cookies = new Cookies();
-      const url = "http://localhost:3005/api/UnitecClass/";
+      const url = "http://localhost:3006/api/unitec/";
       fetch(url, {
         method: "GET", // or ‘PUT’
         headers: { "Content-Type": "application/json" },
@@ -77,13 +83,12 @@ class Unitec extends Component {
     const DynamicTR = this.state.Courses.map((resp, index) => {
       return (
         <tr key={index}>
-          <th className="text-center" scope="row">
+          <td className="text-center" scope="row">
             {index + 1}
-          </th>
-          <td>{resp._id}</td>
-          <td>{resp.NameClass}</td>
+          </td>
+          <td>{resp.Modulo}</td>
+          <td className="text-left">{resp.NameClass}</td>
           <td className="text-center">{resp.lstSemana.length}</td>
-          <td>{resp.Estado}</td>
           <td className="text-center">{resp.Seccion}</td>
           <td>
             <div
@@ -94,22 +99,22 @@ class Unitec extends Component {
             >
               <button
                 type="button"
-                className="btn btn-light"
+                className="btn btn-success"
                 onClick={(e) => this.handlerClick(resp)}
               >
                 Info
               </button>
-              <button type="button" className="btn btn-light">
+              {/* <button type="button" className="btn btn-dark">
                 Recursos <span className="badge badge-light">{}</span>
               </button>
-              <button type="button" className="btn btn-light">
+              <button type="button" className="btn btn-dark">
                 Actividades{" "}
                 {this.state.Courses && (
-                  <span className="badge badge-info">
+                  <span className="badge badge-success">
                     {this.state.Courses.length}
                   </span>
                 )}
-              </button>
+              </button> */}
             </div>
           </td>
           <td>
@@ -129,16 +134,17 @@ class Unitec extends Component {
         <div className="row">
           <div className="col"></div>
         </div>
-        <div className="row">
+        <div className="row main mb-5">
           <div className="col-1 col-sm"></div>
           <div className="col-md-12 table-responsive-sm">
-            <table className="table table-striped table-sm">
+            <table className="table table-hover table-dark table-sm">
               <thead>
                 <tr>
                   <th scope="col">No</th>
-                  <th scope="col">id</th>
-                  <th scope="col">Clase</th>
-                  <th scope="col">Semana</th>
+                  <th scope="col">Modulo</th>
+                  <th style={{ textAlign: "left" }} scope="col">
+                    Clase
+                  </th>
                   <th scope="col">Estado</th>
                   <th scope="col">Seccion</th>
                   <th scope="col" style={{ textAlign: "center" }}>

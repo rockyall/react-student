@@ -21,9 +21,10 @@ function App() {
         <NavBar></NavBar>
         <Switch>
           <Route exact path="/home">
-            <div className="container-fluid">
+            <main>
+              
               <Home></Home>
-            </div>
+            </main>
           </Route>
           <Route exact path="/unitec">
             <div className="container-fluid">

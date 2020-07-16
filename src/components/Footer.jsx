@@ -10,34 +10,14 @@ const Footer = (props) => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <footer className="page-footer font-small " style={{ background: "black" }}>
+      <footer style={{ background: "#1F2122" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12 py-5">
               <div className="mb-5 text-center">
                 <a className="fb-ic">
                   <i
-                    className="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    className="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}
@@ -45,7 +25,7 @@ const Footer = (props) => {
                 </a>
                 <a className="tw-ic">
                   <i
-                    className="fab fa-python fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    className="fab fa-python fa-lg white-text mr-md-5 mr-3 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}
@@ -53,7 +33,7 @@ const Footer = (props) => {
                 </a>
                 <a className="tw-ic">
                   <i
-                    className="fab fa-spotify fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    className="fab fa-spotify fa-lg white-text mr-md-5 mr-3 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}
@@ -61,7 +41,7 @@ const Footer = (props) => {
                 </a>
                 <a className="tw-ic">
                   <i
-                    className="fab fa-react fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    className="fab fa-react fa-lg white-text mr-md-5 mr-3 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}
@@ -69,7 +49,7 @@ const Footer = (props) => {
                 </a>
                 <a className="tw-ic">
                   <i
-                    className="fab fa-node fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    className="fab fa-node fa-lg white-text mr-md-5 mr-3 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}
@@ -77,7 +57,7 @@ const Footer = (props) => {
                 </a>
                 <a className="tw-ic">
                   <i
-                    className="fab fa-js-square fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    className="fab fa-js-square fa-lg white-text mr-md-5 mr-3 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}

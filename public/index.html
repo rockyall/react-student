@@ -14,11 +14,30 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script> -->
     <script
       src="https://kit.fontawesome.com/00a9633430.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      // window.onscroll = function () {
+      //   scrollFunction();
+      // };
+
+      // function scrollFunction() {
+      //   if (
+      //     document.body.scrollTop > 20 ||
+      //     document.documentElement.scrollTop > 20
+      //   ) {
+      //     document.getElementById("Main-navbar").style.top = "0";
+      //   } else {
+      //     document.getElementById("Main-navbar").style.top = "-50px";
+      //   }
+      // }
+    </script>
+
     <link rel="stylesheet" href="./special.css" crossorigin="anonymous" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -31,7 +50,7 @@
     -->
     <title>React App</title>
   </head>
-  <body style="background-color: rgb(230, 230, 230);">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -45,19 +64,35 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script
-      src="https://unpkg.com/react/umd/react.production.min.js"
-      crossorigin
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
     ></script>
-
     <script
-      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-      crossorigin
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
     ></script>
-
     <script
-      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
   </body>
 </html>
