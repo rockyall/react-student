@@ -22,9 +22,17 @@
     url(./fonts/Roboto_Mono/static/RobotoMono-Medium.ttf) format("truetype");
 }
 
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 #root {
   margin: 0;
-  font-family: "Robot";
+  font-family: "Nunito";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,11 +65,11 @@ code {
 }
 
 .section {
-  font-family: Robot;
+  font-family: Nunito;
 }
 
 div .card {
-  font-family: RobotNormal;
+  font-family: Nunito;
 }
 
 h1,
@@ -73,7 +81,7 @@ h6 {
   color: rgb(2, 2, 2);
 }
 .day {
-  color: #9fd0ae;
+  color: #80aca1;
 }
 
 .C-BrandIcon {
@@ -85,18 +93,25 @@ h6 {
   color: white;
 }
 
-.NavHover a:hover {
+.navhover a:hover {
   text-decoration: underline;
 }
 
 .header-img {
   width: 100%;
-  height: 650px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.87)),
     url("./images/BeeingCreative2.png");
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .bbtn-1 {
