@@ -22,13 +22,18 @@ const Header = () => {
       <div className="d-flex align-items-center justify-content-center">
         <div style={{ height: "100vh" }}></div>
         <div class="text-center ">
-          <img
+          {/* <img
             src={require("../../images/profile/Me.jpg")}
             style={{ width: 150, height: 150 }}
             className="avatar "
-          />
+          /> */}
           <div class="card-body">
-            <h5 class="card-title text-light h1 display-5">Ricardo All</h5>
+            <h5 class="card-title text-light h1 display-1">
+              Ricardo
+              <span className="text-warning"></span>{" "}
+              <span className="text-danger"></span>
+              All
+            </h5>
             <p class="card-text text-light">
               System engineer and software development
             </p>

@@ -53,9 +53,9 @@ export default class NavBarCustomed extends Component {
               className="nav-link  C-BrandIcon navbar-brand mx-auto"
               style={this.styleText}
             >
-              Ricardo's Platform
+              {/* Ricardo's Platform */}
               <span style={{ color: "#f15a02" }}></span>
-              <ion-icon name="logo-npm"></ion-icon>
+              {/* <ion-icon name="logo-npm"></ion-icon> */}
             </Link>
             <button
               class="navbar-toggler"

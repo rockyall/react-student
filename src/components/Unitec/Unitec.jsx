@@ -41,7 +41,7 @@ class Unitec extends Component {
         endDelay: 300,
       });
       let cookies = new Cookies();
-      const url = "http://10.0.0.14:3006/api/unitec/";
+      const url = "http://10.0.0.10:3006/api/unitec/";
       fetch(url, {
         method: "GET", // or ‘PUexiT’
         headers: { "Content-Type": "application/json" },

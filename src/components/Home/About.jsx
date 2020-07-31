@@ -33,6 +33,37 @@ class About extends Component {
               style={{ height: "500px" }}
             >
               <div className="col-lg col-md-12">
+                <span className="font-weight-bolder h4">The day at day</span>
+                <ul>
+                  <li>
+                    <span className="font-weight-bolder h6">DataBases</span>
+                    <ul>
+                      <li>MongoDB</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-weight-bolder h6">
+                      Frameworks/Libraries
+                    </span>
+                    <ul>
+                      <li>Blazor Server/WebAssambly</li>
+                      <li>ReactJS</li>
+                      <li>NodeJS/ExpressJs</li>
+                      <li>Selenium/BeautifulSoup/Request</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-weight-bolder h6">Languages</span>
+                    <ul>
+                      <li>Python</li>
+                      <li>HTML/CSS</li>
+                      <li>C#</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-lg col-md-12">
                 <li class="list-unstyled">
                   <span className="font-weight-bolder h4">
                     Software Development
@@ -51,28 +82,6 @@ class About extends Component {
                   </ul>
                 </li>
                 <ul></ul>
-              </div>
-              <div className="col-lg col-md-12">
-                <span className="font-weight-bolder h4">The day at day</span>
-                <ul>
-                  <li>
-                    <span className="font-weight-bolder h6">DataBases</span>
-                    <ul>
-                      <li>MongoDB</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span className="font-weight-bolder h6">
-                      Frameworks/Libraries
-                    </span>
-                    <ul>
-                      <li>ReactJS</li>
-                      <li>NodeJS/ExpressJs</li>
-                      <li>Selenium/BeautifulSoup/Request</li>
-                      <li>Blazor Server/WebAssambly</li>
-                    </ul>
-                  </li>
-                </ul>
               </div>
               <div className="col-lg col-md-12">
                 <span className="font-weight-bolder h4">
@@ -96,7 +105,7 @@ class About extends Component {
             >
               <div className="col-10 text-center">
                 <blockquote class="blockquote text-center text-white">
-                  <p class="mb-0">
+                  <p class="mb-0 h6">
                     Music's a good thing, it calm the beast in the man.{" "}
                   </p>
                   <footer class="blockquote-footer">
@@ -124,11 +133,18 @@ class About extends Component {
                     <li>
                       <ul>
                         <li>
+                          Learn low-level prgoamming lenguages (C++ and
+                          Assambly)
+                        </li>
+                        <li>Get involve in low-level programing proyects </li>
+                        <li>
                           Scalable distributed system (Arquitecture, network,
                           microservicess)
                         </li>
                         <li>Microcontrollers and Microprocessors</li>
                         <li>AI/Machine Learning</li>
+                        <li>Pattern Designs</li>
+                        <li>Mobile cross platform apps</li>
                       </ul>
                     </li>
                   </ul>
