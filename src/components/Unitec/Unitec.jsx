@@ -102,7 +102,7 @@ class Unitec extends Component {
                 className="btn btn-success"
                 onClick={(e) => this.handlerClick(resp)}
               >
-                Info
+                More Info
               </button>
               {/* <button type="button" className="btn btn-dark">
                 Recursos <span className="badge badge-light">{}</span>

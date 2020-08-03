@@ -33,7 +33,7 @@ class About extends Component {
               style={{ height: "500px" }}
             >
               <div className="col-lg col-md-12">
-                <span className="font-weight-bolder h4">The day at day</span>
+                <span className="font-weight-bolder h4">My daily</span>
                 <ul>
                   <li>
                     <span className="font-weight-bolder h6">DataBases</span>
@@ -55,9 +55,13 @@ class About extends Component {
                   <li>
                     <span className="font-weight-bolder h6">Languages</span>
                     <ul>
-                      <li>Python</li>
-                      <li>HTML/CSS</li>
                       <li>C#</li>
+                      <li>Python</li>
+                    </ul>
+                    <span className="font-weight-bolder h6">Markup Language</span>
+                    <ul>
+                      <li>HTML/CSS</li>
+                      <li>XAML (WPF)</li>
                     </ul>
                   </li>
                 </ul>
@@ -133,8 +137,8 @@ class About extends Component {
                     <li>
                       <ul>
                         <li>
-                          Learn low-level prgoamming lenguages (C++ and
-                          Assambly)
+                          Learning middle-level to low-level prgoamming
+                          lenguages (C++ and Assambly)
                         </li>
                         <li>Get involve in low-level programing proyects </li>
                         <li>

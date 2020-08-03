@@ -35,7 +35,7 @@ const Header = () => {
               All
             </h5>
             <p class="card-text text-light">
-              System engineer and software development
+              System engineer and software development blah bla blaa xD
             </p>
             <p class="card-text text-light">
               <small class="text-muted">The art of automation</small>

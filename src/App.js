@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import History from "./components/History/History";
 import Unitec from "./components/Unitec/Unitec";
+import Unitec2 from "./components/Unitec/Unitec2";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
           <Route exact path="/unitec">
             <div className="container-fluid">
               <Unitec></Unitec>
+            </div>
+          </Route>
+          <Route exact path="/unitec2">
+            <div className="container-fluid">
+              <Unitec2></Unitec2>
             </div>
           </Route>
           <Route exact path="/history">

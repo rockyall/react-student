@@ -37,9 +37,15 @@ const Home = () => {
                 <button className="bbtn-1 btn-danger" onClick={handleClick}>
                   WebBrowser Automation
                 </button>
+                <button className="bbtn-1 btn-primary" onClick={handleClick}>
+                  react web site
+                </button>
+                <button className="bbtn-1 btn-success" onClick={handleClick}>
+                  nodejs web site
+                </button>
               </div>
               <div className="d-flex justify-content-center p-3">
-                <Card></Card>
+                {/* <Card></Card> */}
               </div>
             </div>
           </div>

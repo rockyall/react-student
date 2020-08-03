@@ -9,6 +9,11 @@
   src: local("Nunitolight"),
     url(./fonts/Nunito/Nunito-ExtraLight.ttf) format("truetype");
 }
+@font-face {
+  font-family: "NunitoRegular";
+  src: local("NunitoRegular"),
+    url(./fonts/Nunito/Nunito-Regular.ttf) format("truetype");
+}
 
 @font-face {
   font-family: "Robot";
@@ -22,19 +27,19 @@
     url(./fonts/Roboto_Mono/static/RobotoMono-Medium.ttf) format("truetype");
 }
 
+#root {
+  margin: 0;
+  font-family: "Nunito";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html,
 body {
   width: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
-
-#root {
-  margin: 0;
-  font-family: "Nunito";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .nav-link {
@@ -80,6 +85,15 @@ h5,
 h6 {
   color: rgb(2, 2, 2);
 }
+
+.h7 {
+  font-size: 14px;
+}
+
+.text-nunitolight {
+  font-family: NunitoRegular;
+}
+
 .day {
   color: #80aca1;
 }
