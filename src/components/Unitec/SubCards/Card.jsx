@@ -7,6 +7,7 @@ class Card extends Component {
     this.style = { margin: 0 };
   }
 
+
   render() {
     const ButtonWeek = this.props.sub.lstSemana.map((resp, index) => {
       return (
