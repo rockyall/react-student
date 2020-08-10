@@ -41,19 +41,22 @@ class UnitecContent extends Component {
     });
     const ActividadesList = SemenaContent.Actividades.map((resp, index) => {
       return (
-        <a
-          key={index}
-          type="button"
-          // onClick={() => {
-          //   this.onHandleClick(getFullUrl(resp.Header.link_href));
-          // }}
-          href={getFullUrl(resp.Header.link_href)}
-          target="_blank"
-          className="list-group-item-action p-2 d-flex text-left justify-content-between align-items-left"
-        >
-          {resp.Header.Name}
-          <span className="badge badge-info badge-pill"></span>
-        </a>
+        <React.Fragment>
+          <a
+            key={index}
+            type="button"
+            // onClick={() => {
+            //   this.onHandleClick(getFullUrl(resp.Header.link_href));
+            // }}
+            href={getFullUrl(resp.Header.link_href)}
+            target="_blank"
+            className="list-group-item-action p-2 d-flex text-left justify-content-between align-items-left"
+          >
+            {resp.Header.Name}
+            <span className="badge badge-info badge-pill"></span>
+          </a>
+          <p>{resp.Detail_Content.Detail_Description}</p>
+        </React.Fragment>
       );
     });
     return (
