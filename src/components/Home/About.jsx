@@ -8,7 +8,7 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section" style={{ backgroundColor: "#151515" }}>
+        <section className="section" style={{ backgroundColor: "black" }}>
           <div className="container">
             <div className="row p-5">
               <div className="col ">

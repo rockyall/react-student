@@ -28,18 +28,18 @@ const Header = () => {
             className="avatar "
           /> */}
           <div class="card-body">
-            <h5 class="card-title text-light h1 display-1">
-              Ricardo
-              <span className="text-warning"></span>{" "}
-              <span className="text-danger"></span>
-              All
+            <h5 id="RicardoAll" class="card-title text-light h1 display-1">
+              Ricardo All
             </h5>
-            <p class="card-text text-light">
-              System engineer and software development blah bla blaa xD
+            <p class="card-text text-light" style={{ fontSize: 15 }}>
+              Technology enthusiast.
             </p>
-            <p class="card-text text-light">
+            {/* <p id="subRick" class="card-text text-light">
               <small class="text-muted">The art of automation</small>
             </p>
+
+            <button className="custo-1 btn btn-dark">Contact</button> */}
+            {/* <div id="ricky"></div> */}
           </div>
         </div>
         <div style={{ height: "100vh" }}></div>

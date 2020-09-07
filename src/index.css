@@ -27,11 +27,35 @@
     url(./fonts/Roboto_Mono/static/RobotoMono-Medium.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat_Alternates";
+  src: local("Montserrat_Alternates"),
+    url(./fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf)
+      format("truetype");
+}
+
 #root {
   margin: 0;
-  font-family: "Nunito";
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#Main-navbar {
+  transition: 0.4s;
+  padding: 5px;
+}
+
+#RicardoAll {
+  font-family: "Quicksand", sans-serif;
+  padding: 50px;
+}
+#subRick {
+  font-family: "Marck Script", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -43,7 +67,37 @@ body {
 }
 
 .nav-link {
-  font-size: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  color: #031d44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #e7e7e7;
+}
+
+.nav-link-grow-up::before {
+  height: 0%;
+  width: 100%;
+  bottom: 0px;
+}
+
+.nav-link-grow-up:hover::before {
+  height: 5px;
 }
 
 table {
@@ -115,7 +169,29 @@ h6 {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.87)),
-    url("./images/BeeingCreative2.png");
+    url("./images/BeeingCreative1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Sub-header-img {
+  transition: 0.4s;
+  width: 30%;
+  height: 30%;
+  opacity: 0.6;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.87)),
+    url("./images/BeeingCreative1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.Sub-header-img:hover {
+  width: 35%;
+  height: 35%;
+  opacity: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.87)),
+    url("./images/BeeingCreative1.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -164,4 +240,38 @@ div .card {
 }
 div .card:hover {
   box-shadow: 10px 8px rgb(136, 136, 136);
+}
+
+#ricky {
+  width: 350px;
+  height: 550px;
+  border: solid 12px black;
+  background: rgb(71, 71, 71);
+}
+#ricky::after {
+  content: "";
+  display: block;
+  background: #6d6d6d;
+  width: 100px;
+  height: 170px;
+  top: -2em;
+  left: 3.8em;
+}
+#ricky::before {
+  content: "";
+  display: block;
+  margin: 40px;
+  background: #9e9e9e;
+  border: solid 8px black;
+  width: 100px;
+  height: 170px;
+  /* top: -2em; */
+  left: 100%;
+}
+
+#square {
+  width: 2px;
+  height: 25px;
+  border-radius: 5px;
+  background: rgb(224, 224, 224);
 }

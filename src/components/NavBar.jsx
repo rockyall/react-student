@@ -6,54 +6,44 @@ export default class NavBarCustomed extends Component {
     super(props);
     this.state = {};
     this.style = { margin: 0, color: "white" };
-    this.styleText = { color: "white" };
+    this.styleText = { color: "white", fontSize: 16 };
   }
   render() {
     return (
       <React.Fragment>
         <nav
           id="Main-navbar"
-          className="navbar fixed-top navbar-expand-md navbar-dark p-3 navhover"
+          className="navbar fixed-top navbar-expand-md navbar-dark navhover"
           style={{ backgroundColor: "#0d0d0d" }}
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
-                  style={this.styleText}
+                  class="nav-link nav-link-grow-up"
+                  style={{ fontSize: 19, color: "white" }}
                   target="_blank"
                   href="https://www.github.com/rickywrong"
                 >
-                  <i
-                    className="fab fa-github fa-lg white-text  mr-1 fa-1.5x"
-                    style={{ color: "gray" }}
-                  >
-                    {" "}
-                  </i>
-                  GitHub
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style={{ color: "#16ff4b" }} href="#">
-                  <i
-                    className="fab fa-spotify fa-lg white-text mr-1 fa-1.5x"
-                    style={{ color: "green" }}
-                  >
-                    {" "}
-                  </i>
-                  My spotify playlist
+                  Portafolio
+                  {/* <span style={{ marginRight: 12 }}>Ricardo</span>
+                  <span id="square"> </span>
+                  <span style={{ marginLeft: 12 }}>All</span> */}
                 </a>
               </li>
             </ul>
           </div>
-          <div className="mx-auto order-0">
+          <div className="mx-auto order-0 text-center">
             <Link
               to="/"
               className="nav-link  C-BrandIcon navbar-brand mx-auto"
               style={this.styleText}
             >
-              {/* Ricardo's Platform */}
+              {/* <img
+                id="logo"
+                className="Sub-header-img"
+                src={require("../images/BeeingCreative3.png")}
+              ></img> */}
               <span style={{ color: "#f15a02" }}></span>
               {/* <ion-icon name="logo-npm"></ion-icon> */}
             </Link>
@@ -70,37 +60,13 @@ export default class NavBarCustomed extends Component {
 
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 navhover">
             <ul className="navbar-nav ml-auto navhover">
-              <li className="nav-item active">
-                <Link to="/home" className="nav-link" style={this.styleText}>
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link to="/home" className="nav-link" style={this.styleText}>
-                  Works
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link to="/home" className="nav-link" style={this.styleText}>
-                  About
-                </Link>
-              </li>
-              <li className="nav-item active">
-                <Link to="/home" className="nav-link" style={this.styleText}>
-                  Contact me
-                </Link>
-              </li>
-              <Link to="/unitec" className="nav-link">
+              <Link
+                to="/unitec2"
+                className="nav-link nav-link-grow-up"
+                style={{ color: "white", padding: 20, fontSize: 16 }}
+              >
                 Unitec
               </Link>
-              {/* <li className="nav-item">
-                 
-                </li>
-                <li className="nav-item">
-                  <Link to="/history" className="nav-link">
-                    Class History
-                  </Link>
-                </li> */}
             </ul>
           </div>
         </nav>
