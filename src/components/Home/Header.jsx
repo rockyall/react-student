@@ -31,7 +31,7 @@ const Header = () => {
             <h5
               id="RicardoAll"
               class="card-title text-light"
-              style={{ fontSize: 80 }}
+              style={{ fontSize: 60 }}
             >
               Ricardo All
             </h5>

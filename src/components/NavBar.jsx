@@ -7,6 +7,11 @@ export default class NavBarCustomed extends Component {
     this.state = {};
     this.style = { margin: 0, color: "white" };
     this.styleText = { color: "white", fontSize: 16, textDecoration: "none" };
+    this.NavTextRight = {
+      color: "white",
+      fontSize: 12,
+      textDecoration: "none",
+    };
   }
   render() {
     return (
@@ -26,8 +31,8 @@ export default class NavBarCustomed extends Component {
                     color: "white",
                     textDecoration: "none",
                   }}
-                  target="_blank"
-                  href="https://www.github.com/rickywrong"
+                  // target="_blank"
+                  href="/home"
                 >
                   Portafolio
                   {/* <span style={{ marginRight: 12 }}>Ricardo</span>
@@ -51,6 +56,7 @@ export default class NavBarCustomed extends Component {
               <span style={{ color: "#f15a02" }}></span>
               {/* <ion-icon name="logo-npm"></ion-icon> */}
             </Link>
+
             <button
               class="navbar-toggler"
               type="button"
@@ -67,25 +73,29 @@ export default class NavBarCustomed extends Component {
               <Link
                 to="/home"
                 className="nav-link nav-link-grow-up"
-                style={{
-                  color: "white",
-                  fontSize: 12,
-                  textDecoration: "none",
-                }}
+                style={this.NavTextRight}
               >
                 Home
               </Link>
               <Link
                 to="/unitec2"
                 className="nav-link nav-link-grow-up"
-                style={{
-                  color: "white",
-                  fontSize: 12,
-                  textDecoration: "none",
-                }}
+                style={this.NavTextRight}
               >
                 Unitec
               </Link>
+              <a
+                className="nav-link nav-link-grow-up"
+                style={this.NavTextRight}
+                target="_blank"
+                href="https://www.github.com/rickywrong"
+              >
+                {/* GitHub */}
+                <ion-icon name="logo-github"></ion-icon>
+                {/* <span style={{ marginRight: 12 }}>Ricardo</span>
+                  <span id="square"> </span>
+                  <span style={{ marginLeft: 12 }}>All</span> */}
+              </a>
             </ul>
           </div>
         </nav>

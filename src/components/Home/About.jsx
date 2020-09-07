@@ -30,7 +30,7 @@ class About extends Component {
             </div>
             <div
               className="row align-items-center justify-content-center text-white pt-5"
-              style={{ height: "500px" }}
+              style={{ height: "500px", overflowY: "auto" }}
             >
               <div className="col-lg col-md-12">
                 <span className="font-weight-bolder h4">My daily</span>
@@ -58,7 +58,9 @@ class About extends Component {
                       <li>C#</li>
                       <li>Python</li>
                     </ul>
-                    <span className="font-weight-bolder h6">Markup Language</span>
+                    <span className="font-weight-bolder h6">
+                      Markup Language
+                    </span>
                     <ul>
                       <li>HTML/CSS</li>
                       <li>XAML (WPF)</li>
@@ -123,7 +125,7 @@ class About extends Component {
           </div>
         </section>
         <section style={{ height: "500px" }}>
-          <div className="contaner">
+          <div className="container">
             <div
               className="row justify-content-around align-items-center flex-wrap"
               style={{ height: "600px" }}

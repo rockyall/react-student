@@ -66,11 +66,18 @@ body {
   overflow-x: hidden;
 }
 
+ion-icon {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
 .nav-link {
+  vertical-align: middle;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
   color: #031d44;
+  /* padding: 0; */
   margin: 0px 20px;
   display: inline-block;
   position: relative;
