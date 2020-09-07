@@ -65,11 +65,22 @@ export default class NavBarCustomed extends Component {
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 navhover">
             <ul className="navbar-nav ml-auto navhover">
               <Link
+                to="/home"
+                className="nav-link nav-link-grow-up"
+                style={{
+                  color: "white",
+                  fontSize: 12,
+                  textDecoration: "none",
+                }}
+              >
+                Home
+              </Link>
+              <Link
                 to="/unitec2"
                 className="nav-link nav-link-grow-up"
                 style={{
                   color: "white",
-                  fontSize: 16,
+                  fontSize: 12,
                   textDecoration: "none",
                 }}
               >
