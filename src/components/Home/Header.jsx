@@ -28,7 +28,11 @@ const Header = () => {
             className="avatar "
           /> */}
           <div class="card-body">
-            <h5 id="RicardoAll" class="card-title text-light h1 display-1">
+            <h5
+              id="RicardoAll"
+              class="card-title text-light"
+              style={{ fontSize: 80 }}
+            >
               Ricardo All
             </h5>
             <p class="card-text text-light" style={{ fontSize: 15 }}>

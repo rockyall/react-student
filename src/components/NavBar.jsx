@@ -6,7 +6,7 @@ export default class NavBarCustomed extends Component {
     super(props);
     this.state = {};
     this.style = { margin: 0, color: "white" };
-    this.styleText = { color: "white", fontSize: 16 };
+    this.styleText = { color: "white", fontSize: 16, textDecoration: "none" };
   }
   render() {
     return (
@@ -21,7 +21,11 @@ export default class NavBarCustomed extends Component {
               <li class="nav-item">
                 <a
                   class="nav-link nav-link-grow-up"
-                  style={{ fontSize: 19, color: "white" }}
+                  style={{
+                    fontSize: 19,
+                    color: "white",
+                    textDecoration: "none",
+                  }}
                   target="_blank"
                   href="https://www.github.com/rickywrong"
                 >
@@ -63,7 +67,11 @@ export default class NavBarCustomed extends Component {
               <Link
                 to="/unitec2"
                 className="nav-link nav-link-grow-up"
-                style={{ color: "white", padding: 20, fontSize: 16 }}
+                style={{
+                  color: "white",
+                  fontSize: 16,
+                  textDecoration: "none",
+                }}
               >
                 Unitec
               </Link>

@@ -90,15 +90,16 @@ body {
   background-color: #e7e7e7;
 }
 
-.nav-link-grow-up::before {
+/* .nav-link-grow-up::before {
   height: 0%;
-  width: 100%;
+  text-align: center;
+  width: 70%;
   bottom: 0px;
 }
 
 .nav-link-grow-up:hover::before {
   height: 5px;
-}
+} */
 
 table {
   text-align: center;
