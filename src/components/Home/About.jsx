@@ -24,12 +24,12 @@ class About extends Component {
                   become part of my daily as a developer, I always consider
                   myself as a begginer when I started doing something or trying
                   to learn some new concepts, Experimental projects like{" "}
-                  <code>the browser automation</code>
+                  <code>the browser automation </code>
                   has been a good way for me to learn how this stuff works, in
                   my journey of learning and collage I could complement the
                   science of it and get knowledge of how many busnesses
                   incorporate diffrent aspects of many kinds of technologies for
-                  specific reasonin particular following along with best
+                  specific reasons in particular following along with best
                   practices. This is just the begining of the journey...
                 </h6>
               </div>
