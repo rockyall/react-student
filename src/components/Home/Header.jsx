@@ -35,7 +35,7 @@ const Header = () => {
             >
               Ricardo All
             </h5>
-            <p class="card-text text-light" style={{ fontSize: 15 }}>
+            <p class="card-text text-gray" style={{ fontSize: 15 }}>
               Technology enthusiast.
             </p>
             {/* <p id="subRick" class="card-text text-light">

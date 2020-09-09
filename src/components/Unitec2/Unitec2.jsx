@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import UnitecDetail from "./UnitecDetail";
-import UnitecContent from "./UnitecContent";
-import Card from "./SubCards/Card";
+import Card from "./Card";
 import { Cookies } from "react-cookie";
 import anime from "animejs";
 
@@ -88,10 +86,7 @@ class Unitec extends Component {
       <React.Fragment>
         <div className="container-fluid ">
           <div className="row">
-            <div className="col"></div>
-          </div>
-          <div className="row main mb-5">
-            <div className="col-lg-2 col-sm-12">
+            <div className="col">
               <div className="shadow-lg" style={{ borderRadius: 10 }}>
                 <div
                   className="p-4 my-3 text-center bg-white"
@@ -120,11 +115,6 @@ class Unitec extends Component {
                   <h6 className="text-center text-muted h7">
                     WebSite: localhost:300//home
                   </h6>
-
-                  {/* <div className="text-center">
-                  </div>
-                  <div className="text-center">
-                  </div> */}
                   <div class="list-group list-group-flush">
                     <a
                       href="#"
@@ -151,6 +141,8 @@ class Unitec extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="row main mb-5">
             <div className="col-lg col-sm-12 text-nunitolight">
               <div className="my-3 p-4 bg-white rounded shadow">
                 <h4 className="text-center pb-3">
