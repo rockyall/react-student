@@ -33,8 +33,8 @@ const Header = () => {
               className="card-title text-light"
               style={{ fontSize: 60 }}
             >
-              Welcome to my little spot |{" "}
-              <span style={{ color: "#e15b1c" }}>DEV</span>
+              Welcome to my little{" "}
+              <span style={{ color: "#2b5ca5" }}>spot</span>
             </h5>
             <h1
               id="SubTitle-RicardoAll p-0"

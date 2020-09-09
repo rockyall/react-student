@@ -8,7 +8,7 @@ export default class NavBarCustomed extends Component {
     this.style = { margin: 0, color: "white" };
     this.styleText = { color: "white", fontSize: 16, textDecoration: "none" };
     this.NavTextRight = {
-      color: "white",
+      color: "black",
       fontSize: 12,
       textDecoration: "none",
     };
@@ -18,7 +18,7 @@ export default class NavBarCustomed extends Component {
       <React.Fragment>
         <nav
           id="Main-navbar"
-          className="navbar fixed-top navbar-expand-md navbar-dark navhover"
+          className="navbar fixed-top navbar-expand-md navbar-light bg-white navhover shadow-sm"
           style={{ backgroundColor: "#0d0d0d" }}
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
@@ -28,7 +28,7 @@ export default class NavBarCustomed extends Component {
                   class="nav-link nav-link-grow-up"
                   style={{
                     fontSize: 19,
-                    color: "white",
+                    color: "black",
                     textDecoration: "none",
                   }}
                   // target="_blank"
