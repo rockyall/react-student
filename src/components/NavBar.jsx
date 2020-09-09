@@ -78,6 +78,13 @@ export default class NavBarCustomed extends Component {
                 Home
               </Link>
               <Link
+                to="/software"
+                className="nav-link nav-link-grow-up"
+                style={this.NavTextRight}
+              >
+                Software
+              </Link>
+              <Link
                 to="/unitec2"
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}

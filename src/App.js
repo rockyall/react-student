@@ -13,6 +13,7 @@ import NavBar from "./components/NavBar";
 import History from "./components/History/History";
 import Unitec from "./components/Unitec/Unitec";
 import Unitec2 from "./components/Unitec2/Unitec2";
+import Software from "./components/Software/Software";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -39,6 +40,11 @@ function App() {
           <Route exact path="/history">
             <div className="container-fluid">
               <History></History>
+            </div>
+          </Route>
+          <Route exact path="/software">
+            <div className="container-fluid pt-5">
+              <Software></Software>
             </div>
           </Route>
           <Redirect to="/home"></Redirect>

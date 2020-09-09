@@ -8,23 +8,29 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section" style={{ backgroundColor: "black" }}>
+        <section className="section" style={{ backgroundColor: "#191919" }}>
           <div className="container">
-            <div className="row p-5">
-              <div className="col ">
-                <h2 className="text-center text-white">About Me</h2>
+            <div className="row pt-5 pb-5 pl-0">
+              <div className="col">
+                <h2 className="text-left text-white">My Work</h2>
               </div>
             </div>
             <div className="row pt-0 pb-5">
               <div className="col-12">
                 <h6 className="text-white">
-                  I am guy with ambisious to learn wath get my attention, in my
-                  journey of learning and collage I have never thought I will
-                  end up writing programs to resolve little problems in wich
-                  solutions are in my head write code to represent that solution
-                  to work. This become one of my hobbies rather than to listen
-                  to music, deadmau5 my unique artist that inspire me in some
-                  particualry ways.
+                  I was never good at school or academics. I started with the
+                  curiousness and the ambitious to make something for my own
+                  when I started collage, now beside my other activities, have
+                  become part of my daily as a developer, I always consider
+                  myself as a begginer when I started doing something or trying
+                  to learn some new concepts, Experimental projects like{" "}
+                  <code>the browser automation</code>
+                  has been a good way for me to learn how this stuff works, in
+                  my journey of learning and collage I could complement the
+                  science of it and get knowledge of how many busnesses
+                  incorporate diffrent aspects of many kinds of technologies for
+                  specific reasonin particular following along with best
+                  practices. This is just the begining of the journey...
                 </h6>
               </div>
             </div>
@@ -39,6 +45,7 @@ class About extends Component {
                     <span className="font-weight-bolder h6">DataBases</span>
                     <ul>
                       <li>MongoDB</li>
+                      <li>MySQL</li>
                     </ul>
                   </li>
                   <li>
@@ -49,6 +56,7 @@ class About extends Component {
                       <li>Blazor Server/WebAssambly</li>
                       <li>ReactJS</li>
                       <li>NodeJS/ExpressJs</li>
+                      <li className="text-muted">VueJS</li>
                       <li>Selenium/BeautifulSoup/Request</li>
                     </ul>
                   </li>
@@ -57,6 +65,7 @@ class About extends Component {
                     <ul>
                       <li>C#</li>
                       <li>Python</li>
+                      <li>JavaScript</li>
                     </ul>
                     <span className="font-weight-bolder h6">
                       Markup Language

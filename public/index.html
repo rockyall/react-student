@@ -16,37 +16,38 @@
       rel="stylesheet"
     />
     
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/00a9633430.js"
       crossorigin="anonymous"
     ></script>
     <script>
       // When the user scrolls down 20px from the top of the document, slide down the navbar
-      // window.onscroll = function () {
-      //   scrollFunction();
-      // };
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-      // function scrollFunction() {
-      //   if (
-      //     document.body.scrollTop > 20 ||
-      //     document.documentElement.scrollTop > 20
-      //   ) {
-      //     document.getElementById("Main-navbar").style.top = "0";
-      //   } else {
-      //     document.getElementById("Main-navbar").style.top = "-50px";
-      //   }
-      // }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("Main-navbar").style.padding = "0";
+          document.getElementById("Main-navbar").style.backgroundColor = "black";
+        } else {
+          document.getElementById("Main-navbar").style.backgroundColor = "transparent";
+          document.getElementById("Main-navbar").style.padding = "10px";
+        }
+      }
     </script>
 
     <link rel="stylesheet" href="./special.css" crossorigin="anonymous" />
     
     <title>Portafolio</title>
   </head>
-  <body style="background-color: #f3f3f3;">
+  <body style="background-color: #cccccc;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script

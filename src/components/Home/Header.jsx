@@ -18,24 +18,32 @@ const Header = () => {
   });
 
   return (
-    <div class="header-img">
+    <div className="header-img">
       <div className="d-flex align-items-center justify-content-center">
         <div style={{ height: "100vh" }}></div>
-        <div class="text-center ">
+        <div className="text-center ">
           {/* <img
             src={require("../../images/profile/Me.jpg")}
             style={{ width: 150, height: 150 }}
             className="avatar "
           /> */}
-          <div class="card-body">
+          <div className="card-body">
             <h5
-              id="RicardoAll"
-              class="card-title text-light"
+              id="Title-RicardoAll"
+              className="card-title text-light"
               style={{ fontSize: 60 }}
             >
-              Ricardo All
+              Welcome to my little spot |{" "}
+              <span style={{ color: "#e15b1c" }}>DEV</span>
             </h5>
-            <p class="card-text text-gray" style={{ fontSize: 15 }}>
+            <h1
+              id="SubTitle-RicardoAll p-0"
+              style={{ marginBottom: 0 }}
+              className="card-title text-white"
+            >
+              Ricardo All
+            </h1>
+            <p className="card-text text-white" style={{ fontSize: 12 }}>
               Technology enthusiast.
             </p>
             {/* <p id="subRick" class="card-text text-light">

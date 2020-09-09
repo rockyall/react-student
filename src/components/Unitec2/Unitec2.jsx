@@ -35,7 +35,7 @@ class Unitec extends Component {
 
     this.componentDidMount = () => {
       anime({
-        targets: ".row",
+        targets: ".float",
         translateY: 70,
         endDelay: 300,
       });
@@ -85,7 +85,7 @@ class Unitec extends Component {
     return (
       <React.Fragment>
         <div className="container-fluid ">
-          <div className="row">
+          <div className="row float">
             <div className="col">
               <div className="shadow-lg" style={{ borderRadius: 10 }}>
                 <div

@@ -46,10 +46,16 @@
   padding: 5px;
 }
 
-#RicardoAll {
+#Title-RicardoAll {
   font-family: "Quicksand", sans-serif;
   padding: 50px;
 }
+
+#SubTitle-RicardoAll {
+  font-family: "Quicksand", sans-serif;
+  padding: 25px;
+}
+
 #subRick {
   font-family: "Marck Script", cursive;
 }
@@ -64,6 +70,46 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+}
+
+table {
+  text-align: center;
+  background-color: white;
+}
+
+header {
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+
+nav {
+  transition: top 0.3s;
+}
+
+nav .navbar {
+  background-color: transparent !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+section {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+div .card {
+  font-family: Nunito;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(2, 2, 2);
 }
 
 ion-icon {
@@ -96,57 +142,6 @@ ion-icon {
   background-color: #e7e7e7;
 }
 
-/* .nav-link-grow-up::before {
-  height: 0%;
-  text-align: center;
-  width: 70%;
-  bottom: 0px;
-}
-
-.nav-link-grow-up:hover::before {
-  height: 5px;
-} */
-
-table {
-  text-align: center;
-  background-color: white;
-}
-
-header {
-  padding-top: calc(6rem + 104px);
-  padding-bottom: 6rem;
-}
-
-nav {
-  transition: top 0.3s;
-}
-
-nav .navbar {
-  background-color: transparent !important;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.section {
-  font-family: Nunito;
-}
-
-div .card {
-  font-family: Nunito;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgb(2, 2, 2);
-}
-
 .h7 {
   font-size: 14px;
 }
@@ -175,7 +170,7 @@ h6 {
 .header-img {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.87)),
+  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(25, 25, 25, 1)),
     url("./images/BeeingCreative1.png");
   background-size: cover;
   background-position: center;
