@@ -18,7 +18,7 @@ export default class NavBarCustomed extends Component {
       <React.Fragment>
         <nav
           id="Main-navbar"
-          className="navbar fixed-top navbar-expand-md navbar-light bg-white navhover shadow-lg"
+          className="navbar fixed-top navbar-expand-md navbar-light bg-white navhover shadow"
           style={{ backgroundColor: "#0d0d0d" }}
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">

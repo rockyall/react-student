@@ -34,7 +34,7 @@ const Header = () => {
               style={{ fontSize: 60 }}
             >
               Welcome to my little{" "}
-              <span style={{ color: "#2b5ca5" }}>spot</span>
+              <span style={{ color: "#2ba594" }}>spot</span>
             </h5>
             <h1
               id="SubTitle-RicardoAll p-0"
@@ -43,9 +43,11 @@ const Header = () => {
             >
               Ricardo All
             </h1>
+            {/* <button className></button> */}
             <p className="card-text text-white" style={{ fontSize: 12 }}>
               Technology enthusiast.
             </p>
+            {/* <button className="btn btn-primary">More</button> */}
             {/* <p id="subRick" class="card-text text-light">
               <small class="text-muted">The art of automation</small>
             </p>
