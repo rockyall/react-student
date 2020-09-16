@@ -18,13 +18,12 @@ class About extends Component {
             <div className="row pt-0 pb-5">
               <div className="col-12">
                 <h6 className="text-white">
-                  I was never good at school or academics. I started with the
-                  curiousness and the ambitious to make something for my own
-                  when I started collage, now beside my other activities, have
-                  become part of my daily as a developer, I always consider
-                  myself as a begginer when I started doing something or trying
-                  to learn some new concepts, Experimental projects like{" "}
-                  <code>the browser automation </code>
+                  I started with the curiousness and the ambitious to make
+                  something for my own when I started collage, now beside my
+                  other activities, have become part of my daily as a developer,
+                  I always consider myself as a begginer when I started doing
+                  something or trying to learn some new concepts, Experimental
+                  projects like <code>the browser automation </code>
                   has been a good way for me to learn how this stuff works, in
                   my journey of learning and collage I could complement the
                   science of it and get knowledge of how many busnesses
