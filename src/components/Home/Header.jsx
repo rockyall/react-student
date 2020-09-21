@@ -34,7 +34,7 @@ const Header = () => {
               style={{ fontSize: 60 }}
             >
               Welcome to my little{" "}
-              <span style={{ color: "#2ba594" }}>spot</span>
+              <span style={{ color: "#ffff00d6" }}>spot</span>
             </h5>
             <h1
               id="SubTitle-RicardoAll p-0"

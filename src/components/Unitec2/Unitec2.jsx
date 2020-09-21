@@ -84,76 +84,74 @@ class Unitec extends Component {
     });
     return (
       <React.Fragment>
-        <div className="container-fluid ">
-          <div className="row float">
-            <div className="col">
-              <div className="shadow-lg" style={{ borderRadius: 10 }}>
-                <div
-                  className="p-4 my-3 text-center bg-white"
-                  style={{ borderRadius: 10 }}
-                >
-                  <img
-                    src={require("../../images/profile/Me7.jpg")}
-                    style={{ width: 150, height: 150 }}
-                    className="avatar p-1 shadow bg-white mb-4"
-                  />
-                  <h6 className="text-center">
-                    Ricardo All Ochoa Hernandez | Ceutec
-                  </h6>
-                  <div className="text-center">
-                    <p className="text-muted">Ingenieria en Informatica</p>
-                  </div>
-                  <h6 className="text-center text-muted h7">
-                    ricardoochoa@unitec.edu
-                  </h6>
-                  <h6 className="text-center text-muted h7">
-                    GitHub: RickyWrong
-                  </h6>
-                  <h6 className="text-center text-muted h7">
-                    Spotify: Rick.Space
-                  </h6>
-                  <h6 className="text-center text-muted h7">
-                    WebSite: localhost:300//home
-                  </h6>
-                  <div class="list-group list-group-flush">
-                    <a
-                      href="#"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
-                    >
-                      Detalles
-                      <span class="badge badge-primary badge-pill">14</span>
-                    </a>
-                    <a
-                      href="#"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
-                    >
-                      Clases por cursar
-                      <span class="badge badge-warning badge-pill">14</span>
-                    </a>
-                    <a
-                      href="#"
-                      class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
-                    >
-                      Historial de clases
-                      <span class="badge badge-danger badge-pill">14</span>
-                    </a>
-                  </div>
+        <div className="row float">
+          <div className="col">
+            <div className="shadow-lg" style={{ borderRadius: 10 }}>
+              <div
+                className="p-4 my-3 text-center bg-white"
+                style={{ borderRadius: 10 }}
+              >
+                <img
+                  src={require("../../images/profile/Me7.jpg")}
+                  style={{ width: 150, height: 150 }}
+                  className="avatar p-1 shadow bg-white mb-4"
+                />
+                <h6 className="text-center">
+                  Ricardo All Ochoa Hernandez | Ceutec
+                </h6>
+                <div className="text-center">
+                  <p className="text-muted">Ingenieria en Informatica</p>
+                </div>
+                <h6 className="text-center text-muted h7">
+                  ricardoochoa@unitec.edu
+                </h6>
+                <h6 className="text-center text-muted h7">
+                  GitHub: RickyWrong
+                </h6>
+                <h6 className="text-center text-muted h7">
+                  Spotify: Rick.Space
+                </h6>
+                <h6 className="text-center text-muted h7">
+                  WebSite: localhost:300//home
+                </h6>
+                <div class="list-group list-group-flush">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                  >
+                    Detalles
+                    <span class="badge badge-primary badge-pill">14</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                  >
+                    Clases por cursar
+                    <span class="badge badge-warning badge-pill">14</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                  >
+                    Historial de clases
+                    <span class="badge badge-danger badge-pill">14</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row main mb-5">
-            <div className="col-lg col-sm-12 text-nunitolight">
-              <div className="my-3 p-4 bg-white rounded shadow">
-                <h4 className="text-center pb-3">
-                  Classes Actuales - 3 periodo academico
-                </h4>
-                {DynamicCard}
-              </div>
+        </div>
+        <div className="row main mb-5">
+          <div className="col-lg col-sm-12 text-nunitolight">
+            <div className="my-3 p-4 bg-white rounded shadow">
+              <h4 className="text-center pb-3">
+                Classes Actuales - 3 periodo academico
+              </h4>
+              {DynamicCard}
             </div>
           </div>
-          <br />
         </div>
+        <br />
       </React.Fragment>
     );
   }

@@ -43,7 +43,7 @@ function App() {
             </div>
           </Route>
           <Route exact path="/software">
-            <div className="container-fluid pt-5">
+            <div className="container pt-5">
               <Software></Software>
             </div>
           </Route>

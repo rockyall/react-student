@@ -103,6 +103,19 @@ export default class NavBarCustomed extends Component {
                   <span id="square"> </span>
                   <span style={{ marginLeft: 12 }}>All</span> */}
               </a>
+              <a
+                className="nav-link nav-link-grow-up "
+                style={{
+                  color: "black",
+                  fontSize: 10,
+                  textDecoration: "none",
+                }}
+                target="_blank"
+                href="https://dev.to/rickywrong"
+              >
+                {/* GitHub */}
+                <i class="fab fa-dev fa-2x"></i>
+              </a>
             </ul>
           </div>
         </nav>

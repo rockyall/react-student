@@ -170,7 +170,7 @@ ion-icon {
 .header-img {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.664), rgba(25, 25, 25, 1)),
+  background: linear-gradient(rgba(59, 151, 161, 0.664), rgba(59, 151, 161, 1)),
     url("./images/BeeingCreative1.png");
   background-size: cover;
   background-position: center;
