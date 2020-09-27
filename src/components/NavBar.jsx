@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import anime from "animejs";
 
 export default class NavBarCustomed extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class NavBarCustomed extends Component {
       textDecoration: "none",
     };
   }
+
   render() {
     return (
       <React.Fragment>

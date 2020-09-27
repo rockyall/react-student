@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import anime from "animejs";
-import Works from "./Works";
+import InfoDev from "./InfoDev";
 import About from "./About";
 import Header from "./Header";
 // import Picture from "../../images/profile/Me.jpg";
