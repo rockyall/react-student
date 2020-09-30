@@ -115,6 +115,14 @@ class About extends Component {
                       <li>SCRUM</li>
                     </ul>
                   </li>
+                  <li>
+                    <span className="font-weight-bolder h6">
+                      Tools
+                    </span>
+                    <ul>
+                      <li>GitHub Workflow</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>

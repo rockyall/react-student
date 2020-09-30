@@ -10,11 +10,60 @@ const Header = () => {
   }
 
   useEffect(() => {
-    anime({
-      targets: ".bbtn-1",
-      translateY: -20,
-      endDelay: 100,
-    });
+    var option = {
+      opacityIn: [0, 1],
+      ScaleIn: [0.2, 1],
+      Scaelout: 3,
+      durationIn: 800,
+      durationOut: 800,
+      delay: 500,
+      easing: "easeInExpo",
+    };
+
+    anime
+      .timeline({ loop: true })
+      .add({
+        targets: ".text-animated .one",
+        opacity: option.opacityIn,
+        scale: option.ScaleIn,
+        duration: option.durationIn,
+      })
+      .add({
+        targets: ".text-animated .one",
+        opacity: 0,
+        scale: option.Scaelout,
+        easing: option.easing,
+        duration: option.durationOut,
+        delay: option.delay,
+      })
+      .add({
+        targets: ".text-animated .two",
+        opacity: option.opacityIn,
+        scale: option.ScaleIn,
+        duration: option.durationIn,
+      })
+      .add({
+        targets: ".text-animated .two",
+        opacity: 0,
+        scale: option.Scaelout,
+        easing: option.easing,
+        duration: option.durationOut,
+        delay: option.delay,
+      })
+      .add({
+        targets: ".text-animated .three",
+        opacity: option.opacityIn,
+        scale: option.ScaleIn,
+        duration: option.durationIn,
+      })
+      .add({
+        targets: ".text-animated .three",
+        opacity: 0,
+        scale: option.Scaelout,
+        easing: option.easing,
+        duration: option.durationOut,
+        delay: option.delay,
+      });
   });
 
   return (
@@ -27,33 +76,20 @@ const Header = () => {
             style={{ width: 150, height: 150 }}
             className="avatar "
           /> */}
-          <div className="card-body">
-            <h5
+          <div className="card-body text-center">
+            {/* <h5
               id="Title-RicardoAll"
               className="card-title text-light"
               style={{ fontSize: 60 }}
             >
               Welcome to my little{" "}
               <span style={{ color: "#ffff00d6" }}>spot</span>
-            </h5>
-            <h1
-              id="SubTitle-RicardoAll p-0"
-              style={{ marginBottom: 0 }}
-              className="card-title text-white"
-            >
-              Ricardo All
-            </h1>
-            {/* <button className></button> */}
-            <p className="card-text text-white" style={{ fontSize: 12 }}>
-              Technology enthusiast.
-            </p>
-            {/* <button className="btn btn-primary">More</button> */}
-            {/* <p id="subRick" class="card-text text-light">
-              <small class="text-muted">The art of automation</small>
-            </p>
-
-            <button className="custo-1 btn btn-dark">Contact</button> */}
-            {/* <div id="ricky"></div> */}
+            </h5> */}
+            <div className="text-animated">
+              <span className="one">Hi!</span>
+              <span className="two">I am Ricardo All</span>
+              <span className="three">a Technology enthusiast.</span>
+            </div>
           </div>
         </div>
         <div style={{ height: "100vh" }}></div>
