@@ -44,8 +44,8 @@ const Footer = (props) => {
             <div className="col-md-12 col-lg-4 pt-5">
               <h5 style={style}>Contact</h5>
               <p>
-                <strong>Phone: </strong> +504 96420916 <br />
-                <strong>Emails: </strong> ricardoochoa@hotmail.com
+                <strong>Phone: </strong> +504 97479916 <br />
+                <strong>Emails: </strong> richi@hotmail.com
                 <br />
               </p>
             </div>
