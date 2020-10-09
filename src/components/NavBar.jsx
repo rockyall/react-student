@@ -24,10 +24,10 @@ export default class NavBarCustomed extends Component {
           style={{ backgroundColor: "#0d0d0d" }}
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+            <ul className="navbar-nav">
+              <li className="nav-item">
                 <a
-                  class="nav-link nav-link-grow-up"
+                  className="nav-link nav-link-grow-up"
                   style={{
                     fontSize: 19,
                     color: "black",
@@ -60,12 +60,12 @@ export default class NavBarCustomed extends Component {
             </Link>
 
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target=".dual-collapse2"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
           </div>
           {/* <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"></div> */}
@@ -93,6 +93,13 @@ export default class NavBarCustomed extends Component {
               >
                 Unitec
               </Link>
+              <Link
+                to="/nested"
+                className="nav-link nav-link-grow-up"
+                style={this.NavTextRight}
+              >
+                Nested Route
+              </Link>
               <a
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}
@@ -116,7 +123,7 @@ export default class NavBarCustomed extends Component {
                 href="https://dev.to/rickywrong"
               >
                 {/* GitHub */}
-                <i class="fab fa-dev fa-2x"></i>
+                <i className="fab fa-dev fa-2x"></i>
               </a>
             </ul>
           </div>

@@ -15,15 +15,17 @@ class Software extends Component {
   render() {
     return (
       <React.Fragment>
+        {/* <Tech /> */}
+
         <section className="pt-5 pb-5">
-          {/* <h3 className="text-muted">Software Repository</h3> */}
-          <GitHubTable
-            title="Software Repository"
-            IsStriped={false}
-            classParam={this.style}
-          ></GitHubTable>
+          <div className="container pt-5">
+            <GitHubTable
+              title="Software Repository"
+              IsStriped={false}
+              classParam={this.style}
+            ></GitHubTable>
+          </div>
         </section>
-        <Tech />
       </React.Fragment>
     );
   }

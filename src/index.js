@@ -3,16 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter } from "react-router-dom";
 import { CookiesProvider } from "react-cookie";
 import "./fonts/Nunito/Nunito-Light.ttf";
 import "bootstrap/dist/css/bootstrap.min.css";
-import anime from "animejs/lib/anime.es";
+// import anime from "animejs/lib/anime.es";
 
 ReactDOM.render(
   <React.StrictMode>
-    <CookiesProvider>
+    <BrowserRouter>
       <App />
-    </CookiesProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

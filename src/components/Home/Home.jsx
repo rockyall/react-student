@@ -25,11 +25,11 @@ const Home = () => {
   });
 
   return (
-    <React.Fragment>
+    <main>
       <Header></Header>
       {/* <Works></Works> */}
       <About></About>
-    </React.Fragment>
+    </main>
   );
 };
 

@@ -83,7 +83,7 @@ class Unitec extends Component {
       return <Card key={index} sub={resp}></Card>;
     });
     return (
-      <React.Fragment>
+      <div className="container-fluid">
         <div className="row float">
           <div className="col">
             <div className="shadow-lg" style={{ borderRadius: 10 }}>
@@ -152,7 +152,7 @@ class Unitec extends Component {
           </div>
         </div>
         <br />
-      </React.Fragment>
+      </div>
     );
   }
 }

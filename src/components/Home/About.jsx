@@ -9,20 +9,26 @@ class About extends Component {
       height: "500px",
       overflowY: "auto",
     };
+    this.letter = { backgroundColor: "#191919" };
   }
   render() {
     return (
       <React.Fragment>
-        <section className="section" style={{ backgroundColor: "#191919" }}>
+        <section className="section" style={this.letter}>
           <div className="container">
             <div className="row pt-5 pb-5 pl-0">
               <div className="col">
-                <h2 className="text-left text-white">My Work</h2>
+                <h2
+                  className="text-left text-white"
+                  style={{ letterSpacing: 5 }}
+                >
+                  My Work
+                </h2>
               </div>
             </div>
             <div className="row pt-0 pb-5">
               <div className="col-12">
-                <h6 className="text-white">
+                <h6 className="text-white" style={{ fontSize: 15 }}>
                   I started with the curiousness and the ambitious to make
                   something for my own when I started collage, now beside my
                   other activities, have become part of my daily as a developer,

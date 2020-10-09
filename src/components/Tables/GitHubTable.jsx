@@ -4,8 +4,15 @@ import { Table } from "react-bootstrap";
 class GitHubTable extends Component {
   constructor(props) {
     super();
-    this.state = {};
+    this.state = {
+      proyects: [],
+    };
   }
+
+  //Here goes the implementetion for our request API to our express api
+  componentDidMount = () => {
+    // fetch();
+  };
 
   render() {
     const {

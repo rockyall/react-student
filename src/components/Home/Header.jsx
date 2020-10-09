@@ -21,7 +21,7 @@ const Header = () => {
     };
 
     anime
-      .timeline({ loop: true })
+      .timeline({ loop: false })
       .add({
         targets: ".text-animated .one",
         opacity: option.opacityIn,
@@ -86,7 +86,7 @@ const Header = () => {
               <span style={{ color: "#ffff00d6" }}>spot</span>
             </h5> */}
             <div className="text-animated">
-              <span className="one">Hi!</span>
+              <span className="one">Hello Friend!</span>
               <span className="two">I am Ricardo All</span>
               <span className="three">a Technology enthusiast.</span>
             </div>

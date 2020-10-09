@@ -9,7 +9,7 @@ class Tech extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="pb-5">
+        <section className="pt-5 pb-5">
           {/* <h3 className="text-muted">Software Repository</h3> */}
           <h2 className="display-4">Light Blog</h2>{" "}
           <GitHubTable
