@@ -10,6 +10,15 @@ const Header = () => {
   }
 
   useEffect(() => {
+    let animateionFirst = anime({
+      targets: "#imagAvatar",
+      opacity: 1,
+      rotate: {
+        value: 360,
+        duration: 6000,
+      },
+      loop: true,
+    });
     var option = {
       opacityIn: [0, 1],
       ScaleIn: [0.2, 1],
@@ -72,8 +81,9 @@ const Header = () => {
         <div style={{ height: "100vh" }}></div>
         <div className="text-center ">
           <img
+            id="imagAvatar"
             src="https://lh3.googleusercontent.com/proxy/kn1E9AkwsrFN_gV7QNMIaDvAgY3WSR6esW2_PsUsIPAHvctMF7hgrIpOoSyCPISQVhIugdPCbPMtYmoQLBjW1R0USjI8cTlisyF0BU6qyqSgQljZTHx_Uqs"
-	    style={{ width: 150, height: 150 }}
+            style={{ width: 150, height: 150 }}
             className="avatar p-1 shadow bg-white mb-4"
           />
           <div className="card-body text-center">
