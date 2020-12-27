@@ -34,6 +34,9 @@
       format("truetype");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+
 #root {
   margin: 0;
   font-family: "Quicksand", sans-serif;
@@ -44,6 +47,10 @@
 #Main-navbar {
   transition: 0.4s;
   padding: 5px;
+}
+
+#Main-header {
+  font-family: "Signika Negative", sans-serif;
 }
 
 #Title-RicardoAll {
@@ -171,7 +178,7 @@ ion-icon {
 .header-img {
   width: 100%;
   height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(25, 25, 25, 1)),
+  background: linear-gradient(rgba(255, 255, 255, 0.37), rgba(25, 25, 25, 1)),
     radial-gradient(rgba(255, 255, 255, 0.16), rgba(25, 25, 25)),
     url("./images/IMG_20200507_202716_346.jpg");
 

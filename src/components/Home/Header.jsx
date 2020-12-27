@@ -67,29 +67,22 @@ const Header = () => {
   });
 
   return (
-    <div className="header-img">
+    <div id="Main-header" style={{ backgroundColor: "black" }}>
       <div className="d-flex align-items-center justify-content-center">
         <div style={{ height: "100vh" }}></div>
         <div className="text-center ">
-          {/* <img
-            src={require("../../images/profile/Me.jpg")}
-            style={{ width: 150, height: 150 }}
-            className="avatar "
-          /> */}
+          <img
+            src="https://lh3.googleusercontent.com/proxy/kn1E9AkwsrFN_gV7QNMIaDvAgY3WSR6esW2_PsUsIPAHvctMF7hgrIpOoSyCPISQVhIugdPCbPMtYmoQLBjW1R0USjI8cTlisyF0BU6qyqSgQljZTHx_Uqs"
+	    style={{ width: 150, height: 150 }}
+            className="avatar p-1 shadow bg-white mb-4"
+          />
           <div className="card-body text-center">
-            {/* <h5
-              id="Title-RicardoAll"
-              className="card-title text-light"
-              style={{ fontSize: 60 }}
-            >
-              Welcome to my little{" "}
-              <span style={{ color: "#ffff00d6" }}>spot</span>
-            </h5> */}
-            <div className="text-animated">
+            <h2 className="card-title text-light">Hello, I'm Ricardo All</h2>
+            {/* <div className="text-animated">
               <span className="one">Hello Friend!</span>
               <span className="two">I am Ricardo All</span>
               <span className="three">a tech.</span>
-            </div>
+            </div> */}
           </div>
         </div>
         <div style={{ height: "100vh" }}></div>

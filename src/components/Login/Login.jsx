@@ -17,10 +17,36 @@ class Login extends Component {
     };
   }
 
-  handleLog = () => {};
+  handleChange(event) {
+    // const user =
+    this.setState({ credentials: event.target.value });
+  }
+
+  handleLog = () => {
+    try {
+      fetch("http://localhost:5000/api/login/auth", {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        mode: "cors", // no-cors, *cors, same-origin
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(this.state.credentials),
+      })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => console.log(error));
+    } catch (error) {}
+  };
+
+  componentDidMount = () => {};
+
   render() {
     return (
-      <div className="d-flex justify-content-center align-items-center vh-100 bg-warning">
+      <div className="d-flex justify-content-center align-items-center vh-100 bg-white">
         <div
           className="shadow-lg p-3 border border-light bg-white"
           style={{ borderRadius: 12 }}
@@ -34,6 +60,8 @@ class Login extends Component {
               type="text"
               className="form-control text-center border-0"
               style={this.style}
+              value={this.state.credentials.UserName}
+              onChange={() => this.handleChange()}
               placeholder="User"
             />
           </div>
@@ -43,13 +71,15 @@ class Login extends Component {
               type="password"
               className="form-control text-center border-0"
               style={this.style}
+              value={this.state.credentials.Password}
+              onChange={this.handleChange}
               placeholder="Password"
             />
           </div>
           <div className="text-center">
             <button
               onClick={() => this.handleLog()}
-              className="btn btn-sm btn-dark  btn-block"
+              className="btn btn-sm btn-dark"
             >
               <small>Log In</small>
             </button>
