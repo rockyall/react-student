@@ -16,7 +16,7 @@ export default class NavBarCustomed extends Component {
   }
 
   componentDidMount = () => {
-    document.getElementById("Main-navbar").style.padding = "70px";
+    document.getElementById("Main-navbar").style.padding = "50px";
   };
 
   render() {
