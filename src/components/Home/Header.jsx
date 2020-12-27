@@ -73,7 +73,7 @@ const Header = () => {
         <div className="text-center ">
           <img
             src="https://lh3.googleusercontent.com/proxy/kn1E9AkwsrFN_gV7QNMIaDvAgY3WSR6esW2_PsUsIPAHvctMF7hgrIpOoSyCPISQVhIugdPCbPMtYmoQLBjW1R0USjI8cTlisyF0BU6qyqSgQljZTHx_Uqs"
-            style={{ width: 150, height: 150 }}
+	    style={{ width: 150, height: 150 }}
             className="avatar p-1 shadow bg-white mb-4"
           />
           <div className="card-body text-center">
@@ -81,7 +81,7 @@ const Header = () => {
             {/* <div className="text-animated">
               <span className="one">Hello Friend!</span>
               <span className="two">I am Ricardo All</span>
-              <span className="three">a Technology enthusiast.</span>
+              <span className="three">a tech.</span>
             </div> */}
           </div>
         </div>
