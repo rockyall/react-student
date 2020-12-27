@@ -29,7 +29,7 @@ class About extends Component {
             <div className="row pt-0 pb-5">
               <div className="col-12">
                 <h6 className="text-white" style={{ fontSize: 15 }}>
-                  I started with the curiousness and the ambitious to make
+                  Starting with the curiousness and the ambitious to make
                   something for my own when I started collage, now beside my
                   other activities, have become part of my daily as a developer,
                   I always consider myself as a begginer when I started doing
@@ -101,9 +101,6 @@ class About extends Component {
                     <li>High level programming</li>
                     <li>Web Scraping</li>
                     <li>APIs, FullStack web apps</li>
-                    <li>
-                      Trying not to blow y mind with too much exciting things
-                    </li>
                   </ul>
                 </li>
                 <ul></ul>

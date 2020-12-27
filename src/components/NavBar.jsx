@@ -9,38 +9,38 @@ export default class NavBarCustomed extends Component {
     this.style = { margin: 0, color: "white" };
     this.styleText = { color: "white", fontSize: 16, textDecoration: "none" };
     this.NavTextRight = {
-      color: "black",
+      color: "white",
       fontSize: 12,
       textDecoration: "none",
     };
   }
+
+  componentDidMount = () => {
+    document.getElementById("Main-navbar").style.padding = "70px";
+  };
 
   render() {
     return (
       <React.Fragment>
         <nav
           id="Main-navbar"
-          className="navbar fixed-top navbar-expand-md navbar-light bg-white navhover shadow"
-          style={{ backgroundColor: "#0d0d0d" }}
+          className="navbar fixed-top navbar-expand-md navbar-light navhover shadow-sm"
+          style={{ backgroundColor: "black" }}
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a
+                <Link
+                  to="/home"
                   className="nav-link nav-link-grow-up"
                   style={{
                     fontSize: 19,
-                    color: "black",
+                    color: "white",
                     textDecoration: "none",
                   }}
-                  // target="_blank"
-                  href="/home"
                 >
                   Portafolio
-                  {/* <span style={{ marginRight: 12 }}>Ricardo</span>
-                  <span id="square"> </span>
-                  <span style={{ marginLeft: 12 }}>All</span> */}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -68,7 +68,6 @@ export default class NavBarCustomed extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
           </div>
-          {/* <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"></div> */}
 
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 navhover">
             <ul className="navbar-nav ml-auto navhover">
@@ -93,13 +92,7 @@ export default class NavBarCustomed extends Component {
               >
                 Unitec
               </Link>
-              <Link
-                to="/nested"
-                className="nav-link nav-link-grow-up"
-                style={this.NavTextRight}
-              >
-                Nested Route
-              </Link>
+
               <a
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}

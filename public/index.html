@@ -25,11 +25,14 @@
     ></script>
     <script>
       // When the user scrolls down 20px from the top of the document, slide down the navbar
+      
       window.onscroll = function () {
+        
         scrollFunction();
       };
 
       function scrollFunction() {
+        
         if (
           document.body.scrollTop > 20 ||
           document.documentElement.scrollTop > 20
@@ -38,7 +41,7 @@
           // document.getElementById("Main-navbar").style.backgroundColor = "black";
         } else {
           // document.getElementById("Main-navbar").style.backgroundColor = "transparent";
-          document.getElementById("Main-navbar").style.padding = "10px";
+          document.getElementById("Main-navbar").style.padding = "70px";
         }
       }
     </script>
