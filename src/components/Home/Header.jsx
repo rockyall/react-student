@@ -88,7 +88,7 @@ const Header = () => {
             <div className="text-animated">
               <span className="one">Hello Friend!</span>
               <span className="two">I am Ricardo All</span>
-              <span className="three">a Technology enthusiast.</span>
+              <span className="three">a tech.</span>
             </div>
           </div>
         </div>
