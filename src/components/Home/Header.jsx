@@ -17,6 +17,7 @@ const Header = () => {
         value: 360,
         duration: 6000,
       },
+      delay: (elm, index, t) => index * 20,
       loop: true,
     });
     var option = {
@@ -97,6 +98,10 @@ const Header = () => {
         </div>
         <div style={{ height: "100vh" }}></div>
       </div>
+      <div
+        className="bg-secondary"
+        style={{ height: 20, weight: "100%" }}
+      ></div>
     </div>
   );
 };

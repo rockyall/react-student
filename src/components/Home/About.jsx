@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import GitHubTable from "../Tables/GitHubTable";
 
 class About extends Component {
@@ -147,6 +148,10 @@ class About extends Component {
             <br />
           </div>
         </section>
+        <div className="bg-danger" style={{ height: 5, width: "100%" }}></div>
+        <div className="bg-dark" style={{ height: 5, width: "100%" }}></div>
+        <div className="bg-white" style={{ height: 5, width: "100%" }}></div>
+        <div className="bg-dark" style={{ height: 5, width: "100%" }}></div>
         <section>
           <div className="container">
             <div className="d-flex flex-row justify-content-center bd-highlight mb-3 m-auto">
@@ -185,8 +190,12 @@ class About extends Component {
               </div>
             </div>
             <div className="d-flex flex-row justify-content-center bd-highlight mb-3">
-              <button className="btn btn-sm btn-dark m-5">Home </button>
-              <button className="btn btn-sm btn-dark m-5">Contact </button>
+              <Link to="/home" className="btn btn-sm btn-dark m-5">
+                Home{" "}
+              </Link>
+              <Link to="/home" className="btn btn-sm btn-dark m-5">
+                Contact
+              </Link>
               {/* <div className="col-12">
               </div> */}
             </div>
