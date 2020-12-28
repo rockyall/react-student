@@ -83,7 +83,7 @@ const Header = () => {
         <div className="text-center ">
           <img
             id="imagAvatar"
-            src="https://lh3.googleusercontent.com/proxy/kn1E9AkwsrFN_gV7QNMIaDvAgY3WSR6esW2_PsUsIPAHvctMF7hgrIpOoSyCPISQVhIugdPCbPMtYmoQLBjW1R0USjI8cTlisyF0BU6qyqSgQljZTHx_Uqs"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Inverted_Pentagram.svg/497px-Inverted_Pentagram.svg.png"
             style={{ width: 150, height: 150 }}
             className="avatar p-1 shadow bg-white mb-4"
           />

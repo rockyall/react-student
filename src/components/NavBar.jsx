@@ -61,6 +61,7 @@ export default class NavBarCustomed extends Component {
 
             <button
               className="navbar-toggler"
+              style={{ backgroundColor: "white" }}
               type="button"
               data-toggle="collapse"
               data-target=".dual-collapse2"
