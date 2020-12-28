@@ -29,7 +29,6 @@ const Footer = (props) => {
             </div>
             <div className="col-md-12 col-lg-4 pt-5">
               <h5 style={style}>Dev Topics</h5>
-              {/* <i style={{ color: "gray" }} className="fab fa-dev fa-1x"></i> */}
               <p style={{ color: "gray", textAlign: "left", fontSize: 12 }}>
                 Development topics posted on{" "}
                 <a
@@ -66,20 +65,20 @@ const Footer = (props) => {
                   >
                     {" "}
                   </i>
-                  <i
+                  {/* <i
                     class="fab fa-instagram fa-lg m-2 fa-1.5x"
                     style={{ color: "gray" }}
-                  ></i>
+                  ></i> */}
                   {/* <i
                     className="fab fa-react fa-lg m-2 fa-1.5x"
                     style={{ color: "gray" }}
                   >
                     {" "}
                   </i> */}
-                  <i
+                  {/* <i
                     class="fab fa-linkedin fa-lg m-2 fa-1.5x"
                     style={{ color: "gray" }}
-                  ></i>
+                  ></i> */}
                   <i
                     class="fab fa-spotify fa-lg m-2 fa-1.5x"
                     style={{ color: "gray" }}

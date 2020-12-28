@@ -89,6 +89,7 @@ const Header = () => {
           />
           <div className="card-body text-center">
             <h2 className="card-title text-light">Hello, I'm Ricardo All</h2>
+            <h6 className="card-title text-light">Software Engineer | Ceutec</h6>
             {/* <div className="text-animated">
               <span className="one">Hello Friend!</span>
               <span className="two">I am Ricardo All</span>

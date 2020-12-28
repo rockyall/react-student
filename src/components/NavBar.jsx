@@ -39,7 +39,7 @@ export default class NavBarCustomed extends Component {
                     textDecoration: "none",
                   }}
                 >
-                  Portafolio
+                  ricardoall_
                 </Link>
               </li>
             </ul>
@@ -73,13 +73,6 @@ export default class NavBarCustomed extends Component {
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 navhover">
             <ul className="navbar-nav ml-auto navhover">
               <Link
-                to="/home"
-                className="nav-link nav-link-grow-up"
-                style={this.NavTextRight}
-              >
-                Home
-              </Link>
-              <Link
                 to="/software"
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}
@@ -87,18 +80,25 @@ export default class NavBarCustomed extends Component {
                 Software
               </Link>
               <Link
+                to="/home"
+                className="nav-link nav-link-grow-up"
+                style={this.NavTextRight}
+              >
+                Curriculum
+              </Link>
+              <Link
                 to="/unitec2"
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}
               >
-                Unitec
+                Tips stuff
               </Link>
 
               <a
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}
                 target="_blank"
-                href="https://www.github.com/rickywrong"
+                href="https://www.github.com/rockyall"
               >
                 {/* GitHub */}
                 <ion-icon name="logo-github"></ion-icon>

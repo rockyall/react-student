@@ -15,8 +15,10 @@ class Software extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* <Tech /> */}
-
+        <div style={{ marginTop: "50px" }}></div>
+        <section>
+          <h5 className="mt-5">Aviable Projects</h5>
+        </section>
         <section className="pt-5 pb-5">
           <div className="container pt-5">
             <GitHubTable
