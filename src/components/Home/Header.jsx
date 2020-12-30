@@ -10,16 +10,32 @@ const Header = () => {
   }
 
   useEffect(() => {
-    let animateionFirst = anime({
+    // let animateionFirst = anime({
+    //   targets: "#imagAvatar",
+    //   opacity: 1,
+    //   rotate: {
+    //     value: 360,
+    //     duration: 6000,
+    //   },
+    //   delay: (elm, index, t) => index * 20,
+    //   loop: true,
+    // });
+    let tl = anime.timeline({
+      duration: 2000,
+      complete: function () {
+        tl.restart();
+      },
+    });
+
+    tl.add({
       targets: "#imagAvatar",
-      opacity: 1,
       rotate: {
         value: 360,
-        duration: 6000,
       },
-      delay: (elm, index, t) => index * 20,
-      loop: true,
+      easing: "linear",
+      direction: "alternate",
     });
+
     var option = {
       opacityIn: [0, 1],
       ScaleIn: [0.2, 1],
@@ -89,7 +105,9 @@ const Header = () => {
           />
           <div className="card-body text-center">
             <h2 className="card-title text-light">Hello, I'm Ricardo All</h2>
-            <h6 className="card-title text-light">Software Engineer | Ceutec</h6>
+            <h6 className="card-title text-light">
+              Software Engineer | Ceutec
+            </h6>
             {/* <div className="text-animated">
               <span className="one">Hello Friend!</span>
               <span className="two">I am Ricardo All</span>

@@ -25,7 +25,7 @@ export default class NavBarCustomed extends Component {
         <nav
           id="Main-navbar"
           className="navbar fixed-top navbar-expand-md navbar-light navhover shadow-sm"
-          style={{ backgroundColor: "black" }}
+          style={{ backgroundColor: "#060606" }}
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul className="navbar-nav">
