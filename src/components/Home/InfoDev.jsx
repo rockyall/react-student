@@ -5,6 +5,18 @@ class InfoDev extends Component {
     super(props);
     this.state = {};
   }
+
+  componentDidMount = () => {
+    var _coomeet = [];
+    _coomeet["PartnerId"] = 16091302564962;
+    var coomeet = document.createElement("script");
+    coomeet.type = "text/javascript";
+    coomeet.async = true;
+    coomeet.src = "https://i.coomeet.com/js/code.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(coomeet, s);
+  };
+
   render() {
     return (
       <React.Fragment>
