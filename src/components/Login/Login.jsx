@@ -31,16 +31,20 @@ class Login extends Component {
       console.log("Sending request ot server");
       console.table(this.state.credentials);
       console.log(this.state.credentials);
-      fetch("http://ricardoall.com/api/auth/login", {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          Origin: "*",
-        },
-        body: JSON.stringify(this.state.credentials),
-      })
+      const userData = this.state.credentials;
+      fetch(
+        `http://ricardoall.com/api/auth/login/${userData.UserName}${userData.UserName.Password}`,
+        {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          mode: "cors", // no-cors, *cors, same-origin
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            Origin: "*",
+          },
+          body: JSON.stringify(this.state.credentials),
+        }
+      )
         .then((resp) => {
           // const reponse = data.text();
           // console.log(Response);
