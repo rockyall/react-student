@@ -17,32 +17,47 @@ class Login extends Component {
     };
   }
 
-  handleChange(event) {
-    // const user =
-    this.setState({ credentials: event.target.value });
-  }
+  handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState((state) => {
+      state.credentials[name] = value;
+      return state;
+    });
+  };
 
   handleLog = () => {
     try {
-      fetch("http://localhost:5000/api/login/auth", {
+      console.log("Sending request ot server");
+      console.table(this.state.credentials);
+      console.log(this.state.credentials);
+      fetch("http://ricardoall.com/api/auth/login", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
         headers: {
+          Accept: "application/json",
           "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
+          Origin: "*",
         },
         body: JSON.stringify(this.state.credentials),
       })
-        .then((data) => {
-          console.log(data);
+        .then((resp) => {
+          // const reponse = data.text();
+          // console.log(Response);
+          resp.json().then((resp) => {
+            console.table(resp);
+          });
         })
         .catch((error) => console.log(error));
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+      console.table(error);
+    }
   };
 
-  componentDidMount = () => {};
+  componentDidMount = () => {
+    const storedJwt = localStorage.getItem("token");
+  };
 
   render() {
     return (
@@ -58,10 +73,11 @@ class Login extends Component {
             {/* <h6 style={{ width: 120, letterSpacing: 5 }}>User</h6> */}
             <input
               type="text"
+              name="UserName"
               className="form-control text-center border-0"
               style={this.style}
               value={this.state.credentials.UserName}
-              onChange={() => this.handleChange()}
+              onChange={this.handleChange}
               placeholder="User"
             />
           </div>
@@ -69,6 +85,7 @@ class Login extends Component {
             {/* <h6 style={{ width: 120, letterSpacing: 5 }}>Password</h6> */}
             <input
               type="password"
+              name="Password"
               className="form-control text-center border-0"
               style={this.style}
               value={this.state.credentials.Password}

@@ -26,7 +26,7 @@ class GitHubTable extends Component {
 
     return (
       <React.Fragment>
-        <h3 className="mt-5 font-weight-bolder h4">{title}</h3>
+        {/* <h3 className="mt-5 font-weight-bolder h4">{title}</h3> */}
         <div style={classParam}>
           <Table
             striped={IsStriped}

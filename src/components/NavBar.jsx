@@ -16,7 +16,7 @@ export default class NavBarCustomed extends Component {
   }
 
   componentDidMount = () => {
-    document.getElementById("Main-navbar").style.padding = "30px";
+    document.getElementById("Main-navbar").style.padding = "20px";
   };
 
   render() {
@@ -80,7 +80,7 @@ export default class NavBarCustomed extends Component {
                 Software
               </Link>
               <Link
-                to="/home"
+                to="/summary"
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}
               >

@@ -32,6 +32,7 @@ const Header = () => {
       rotate: {
         value: 360,
       },
+
       easing: "linear",
       direction: "alternate",
     });
@@ -104,6 +105,7 @@ const Header = () => {
             className="avatar p-1 shadow bg-white mb-4"
           />
           <div className="card-body text-center">
+            <hr></hr>
             <h2 className="card-title text-light">Hello, I'm Ricardo All</h2>
             <h6 className="card-title text-light">
               Software Engineer | Ceutec

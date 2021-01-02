@@ -12,6 +12,8 @@ const WebPage = () => {
   return (
     <React.Fragment>
       <NavBar></NavBar>
+      <div style={{ height: "84px" }}></div>
+
       <Switch>
         <Route
           exact
@@ -26,7 +28,7 @@ const WebPage = () => {
 
         <Route
           exact
-          path="/history"
+          path="/summary"
           render={(props) => <History {...props}></History>}
         ></Route>
         <Route

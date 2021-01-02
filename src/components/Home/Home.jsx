@@ -25,7 +25,7 @@ const Home = () => {
   });
 
   return (
-    <main>
+    <main className="d-flex">
       <Header></Header>
       {/* <Works></Works> */}
       <About></About>

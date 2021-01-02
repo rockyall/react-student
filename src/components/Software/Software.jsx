@@ -15,8 +15,27 @@ class Software extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="pt-5 pb-5">
-          <div className="container pt-5 mt-5">
+        <section className="pb-5">
+          
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="d-flex">
+                  <img
+                    className="p-1 shadow-sm"
+                    style={{
+                      objectFit: "cover",
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                    }}
+                    src={require("../../images/profile/Me5.jpg")}
+                  ></img>
+                  <h5 className="font-weight-bolder m-2">Ricardo All Ochoa</h5>
+                </div>
+              </div>
+            </div>
+            <hr></hr>
             <div className="row">
               <div className="col">
                 <h4 className=" font-weight-bolder h4">
@@ -55,10 +74,37 @@ class Software extends Component {
                 </div>
               </div>
             </div>
+            <div className="row mt-5">
+              <div className="col-12">
+                <div className="d-flex">
+                  <img
+                    className="p-1 shadow-sm"
+                    style={{
+                      objectFit: "cover",
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                    }}
+                    src={require("../../images/profile/Me5.jpg")}
+                  ></img>
+                  <h5 className="font-weight-bolder m-2">Ricardo All Ochoa</h5>
+                </div>
+              </div>
+            </div>
+            <hr></hr>
             <div className="row">
+              <div className="col-12">
+                <h3 className="font-weight-bolder">Software Repository</h3>
+              </div>
+              <div className="col-12">
+                <p className="font-weight-bolder text-dark">
+                  GitHub - rockyall
+                </p>
+              </div>
+            </div>
+            <div className="row mt-4">
               <div className="col">
                 <GitHubTable
-                  title="Software Repository"
                   IsStriped={false}
                   classParam={this.style}
                 ></GitHubTable>

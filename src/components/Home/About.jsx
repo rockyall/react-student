@@ -23,7 +23,7 @@ class About extends Component {
                   className="text-left text-white"
                   style={{ letterSpacing: 5 }}
                 >
-                  My Work
+                  Work
                 </h2>
               </div>
             </div>
@@ -128,30 +128,11 @@ class About extends Component {
                 </ul>
               </div>
             </div>
-            {/* <div
-              className="row align-items-end justify-content-center"
-              style={{ height: "300px" }}
-            >
-              <div className="col-10 text-center">
-                <blockquote class="blockquote text-center text-white">
-                  <p class="mb-0 h6">
-                    Music's a good thing, it calm the beast in the man.{" "}
-                  </p>
-                  <footer class="blockquote-footer">
-                    Joseph Stalin <cite title="Source Title"></cite>
-                  </footer>
-                </blockquote>
-              </div>
-            </div> */}
             <br />
             <br />
             <br />
           </div>
         </section>
-        <div className="bg-danger" style={{ height: 5, width: "100%" }}></div>
-        <div className="bg-dark" style={{ height: 5, width: "100%" }}></div>
-        <div className="bg-white" style={{ height: 5, width: "100%" }}></div>
-        <div className="bg-dark" style={{ height: 5, width: "100%" }}></div>
         <section>
           <div className="container">
             <div className="d-flex flex-row justify-content-center bd-highlight mb-3 m-auto">
@@ -163,8 +144,9 @@ class About extends Component {
                 />
               </div>
             </div>
-            <div className="d-flex flex-row justify-content-start bd-highlight mb-3">
-              <div className="col-12">
+            <div className="d-flex flex-row justify-content-center bd-highlight mb-3">
+              <div className="col-4"></div>
+              <div className="col-4">
                 <ul className="list-unstyled">
                   <span className="font-weight-bolder h4">
                     Future Ventures (in {new Date().getFullYear()})
@@ -188,6 +170,7 @@ class About extends Component {
                   </li>
                 </ul>
               </div>
+              <div className="col-4"></div>
             </div>
             <div className="d-flex flex-row justify-content-center bd-highlight mb-3">
               <Link to="/home" className="btn btn-sm btn-dark m-5">

@@ -6,7 +6,7 @@ let style = { color: "white", textAlign: "left" };
 const Footer = (props) => {
   return (
     <React.Fragment>
-      <footer style={{ background: "#1F2122" }}>
+      <footer style={{ background: "#212121" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-4 pt-5">
