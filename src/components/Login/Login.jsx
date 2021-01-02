@@ -33,7 +33,7 @@ class Login extends Component {
       console.log(this.state.credentials);
       const userData = this.state.credentials;
       fetch(
-        `http://ricardoall.com/api/auth/login/${userData.UserName}/${userData.UserName.Password}`,
+        `https://ricardoall.com/api/auth/login/${userData.UserName}/${userData.Password}`,
         {
           method: "POST", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, *cors, same-origin
