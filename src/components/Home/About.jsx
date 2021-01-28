@@ -17,12 +17,13 @@ class About extends Component {
       <React.Fragment>
         <section className="section">
           <div className="container">
-            <div className="row pt-5 pb-5 pl-0">
-              <div className="col">
-                <h2 className="text-left text-dark">Myself</h2>
-              </div>
-            </div>
             <div className="row pt-0 pb-5">
+              <div className="col-12">
+                <h2 className="text-left text-dark">
+                  A Moment to Myself
+                  <span style={{ fontSize: "10px" }}>- deadmau5 song title</span>
+                </h2>
+              </div>
               <div className="col-12">
                 <h6 className="text-dark" style={{ fontSize: 15 }}>
                   Starting with the curiousness and the ambitious to make
