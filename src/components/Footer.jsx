@@ -6,7 +6,7 @@ let style = { color: "white", textAlign: "left" };
 const Footer = (props) => {
   return (
     <React.Fragment>
-      <footer style={{ background: "#212121" }}>
+      <footer style={{ background: "White" }}>
         <div className="container">
           <div className="d-flex flex-row align-items-end">
             <div className="col-md-12 py-5">
@@ -45,7 +45,6 @@ const Footer = (props) => {
               </div>
             </div>
           </div>
-
           {/* <div className="row">
             <div className="col-md-12">
               <div

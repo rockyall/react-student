@@ -38,6 +38,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
 #root {
   margin: 0;
@@ -125,9 +127,10 @@ ion-icon {
 }
 
 .nav-link {
+  font-family: "Quicksand", sans-serif;
   vertical-align: middle;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
   color: #031d44;
   /* padding: 0; */
@@ -186,6 +189,19 @@ ion-icon {
   position: relative;
 }
 
+.code-cropped {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.412), rgba(0, 0, 0, 0.063)),
+    radial-gradient(rgba(255, 255, 255, 0), rgb(255, 254, 254)),
+    url("./images/background/code2.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
 .Sub-header-img {
   transition: 0.4s;
   width: 30%;
@@ -210,6 +226,7 @@ ion-icon {
 
 .avatar {
   vertical-align: middle;
+  object-fit: cover;
   width: 50px;
   height: 50px;
   border-radius: 50%;

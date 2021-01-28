@@ -15,11 +15,9 @@ class History extends Component {
     return (
       <React.Fragment>
         <div className="container-fluid">
-          <h4>Hellow history ded</h4>
-          <h4>Hellow historyss</h4>
-          <button className="btn btn-primary" onClick={this.OnHomeHandle}>
-            Home button
-          </button>
+          <div className="row">
+            <div className="col-12"></div>
+          </div>
         </div>
       </React.Fragment>
     );

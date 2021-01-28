@@ -7,7 +7,7 @@ export default class NavBarCustomed extends Component {
     super(props);
     this.state = {};
     this.style = { margin: 0, color: "gray" };
-    this.styleText = { color: "gray", fontSize: 16, textDecoration: "none" };
+    this.styleText = { color: "gray", textDecoration: "none" };
     this.NavTextRight = {
       color: "gray",
       fontSize: 12,
@@ -33,7 +33,6 @@ export default class NavBarCustomed extends Component {
                   to="/home"
                   className="nav-link nav-link-grow-up"
                   style={{
-                    fontSize: 19,
                     color: "black",
                     textDecoration: "none",
                   }}
