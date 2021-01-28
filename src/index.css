@@ -93,10 +93,7 @@ header {
 
 nav {
   transition: top 0.3s;
-}
-
-nav .navbar {
-  background-color: transparent !important;
+  background-color: white;
 }
 
 code {
@@ -182,7 +179,7 @@ ion-icon {
   height: 70vh;
   background: linear-gradient(rgba(255, 255, 255, 0.37), rgba(25, 25, 25, 1)),
     radial-gradient(rgba(255, 255, 255, 0.16), rgba(25, 25, 25)),
-    url("./images/IMG_20200507_202716_346.jpg");
+    url("./images/myself.jpg");
 
   background-size: auto;
   background-position: center;

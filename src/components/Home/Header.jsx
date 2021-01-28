@@ -94,35 +94,23 @@ const Header = () => {
   });
 
   return (
-    <div id="Main-header" style={{ backgroundColor: "black" }}>
+    <div id="Main-header">
       <div className="d-flex align-items-center justify-content-center">
         <div style={{ height: "100vh" }}></div>
         <div className="text-center ">
           <img
             id="imagAvatar"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Inverted_Pentagram.svg/497px-Inverted_Pentagram.svg.png"
+            src={require("../../images/BeeingCreative5.png")}
             style={{ width: 150, height: 150 }}
             className="avatar p-1 shadow bg-white mb-4"
           />
           <div className="card-body text-center">
-            <hr></hr>
-            <h2 className="card-title text-light">Hello, I'm Ricardo All</h2>
-            <h6 className="card-title text-light">
-              Software Engineer | Ceutec
-            </h6>
-            {/* <div className="text-animated">
-              <span className="one">Hello Friend!</span>
-              <span className="two">I am Ricardo All</span>
-              <span className="three">a tech.</span>
-            </div> */}
+            <h2 className="card-title text-dark">Hello, I'm Ricardo All</h2>
+            <h6 className="card-title text-dark">Software Engineer | Ceutec</h6>
           </div>
         </div>
         <div style={{ height: "100vh" }}></div>
       </div>
-      <div
-        className="bg-secondary"
-        style={{ height: 20, weight: "100%" }}
-      ></div>
     </div>
   );
 };

@@ -6,10 +6,10 @@ export default class NavBarCustomed extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.style = { margin: 0, color: "white" };
-    this.styleText = { color: "white", fontSize: 16, textDecoration: "none" };
+    this.style = { margin: 0, color: "gray" };
+    this.styleText = { color: "gray", fontSize: 16, textDecoration: "none" };
     this.NavTextRight = {
-      color: "white",
+      color: "gray",
       fontSize: 12,
       textDecoration: "none",
     };
@@ -24,8 +24,7 @@ export default class NavBarCustomed extends Component {
       <React.Fragment>
         <nav
           id="Main-navbar"
-          className="navbar fixed-top navbar-expand-md navbar-light navhover shadow-sm"
-          style={{ backgroundColor: "#060606" }}
+          className="navbar fixed-top navbar-light navbar-expand-lg"
         >
           <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul className="navbar-nav">
@@ -35,7 +34,7 @@ export default class NavBarCustomed extends Component {
                   className="nav-link nav-link-grow-up"
                   style={{
                     fontSize: 19,
-                    color: "white",
+                    color: "black",
                     textDecoration: "none",
                   }}
                 >
@@ -86,13 +85,20 @@ export default class NavBarCustomed extends Component {
               >
                 Curriculum
               </Link>
-              <Link
+              {/* <Link
                 to="/unitec2"
                 className="nav-link nav-link-grow-up"
                 style={this.NavTextRight}
               >
                 Tips stuff
               </Link>
+              <Link
+                to="/finance"
+                className="nav-link nav-link-grow-up"
+                style={this.NavTextRight}
+              >
+                Finance
+              </Link> */}
 
               <a
                 className="nav-link nav-link-grow-up"

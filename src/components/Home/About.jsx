@@ -15,21 +15,16 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section" style={this.letter}>
+        <section className="section">
           <div className="container">
             <div className="row pt-5 pb-5 pl-0">
               <div className="col">
-                <h2
-                  className="text-left text-white"
-                  style={{ letterSpacing: 5 }}
-                >
-                  Work
-                </h2>
+                <h2 className="text-left text-dark">Myself</h2>
               </div>
             </div>
             <div className="row pt-0 pb-5">
               <div className="col-12">
-                <h6 className="text-white" style={{ fontSize: 15 }}>
+                <h6 className="text-dark" style={{ fontSize: 15 }}>
                   Starting with the curiousness and the ambitious to make
                   something for my own when I started collage, now beside my
                   other activities, have become part of my daily as a developer,
@@ -46,7 +41,7 @@ class About extends Component {
               </div>
             </div>
             <div
-              className="row align-items-center justify-content-center text-white pt-5 pb-5"
+              className="row align-items-center justify-content-center text-dark pt-5 pb-5"
               style={{ height: "550px", overflowY: "auto" }}
             >
               <div className="col-lg col-md-12">
@@ -119,10 +114,10 @@ class About extends Component {
                       <li>SCRUM</li>
                     </ul>
                   </li>
-                  <li className="text-muted">
+                  <li>
                     <span className="font-weight-bolder h6">Tools</span>
                     <ul>
-                      <li>GitHub Workflow</li>
+                      <li>Git Workflow</li>
                     </ul>
                   </li>
                 </ul>
@@ -135,43 +130,6 @@ class About extends Component {
         </section>
         <section>
           <div className="container">
-            <div className="d-flex flex-row justify-content-center bd-highlight mb-3 m-auto">
-              <div className="col-12">
-                <GitHubTable
-                  IsStriped={false}
-                  title="Recent Work"
-                  classParam={this.style}
-                />
-              </div>
-            </div>
-            <div className="d-flex flex-row justify-content-center bd-highlight mb-3">
-              <div className="col-4"></div>
-              <div className="col-4">
-                <ul className="list-unstyled">
-                  <span className="font-weight-bolder h4">
-                    Future Ventures (in {new Date().getFullYear()})
-                  </span>
-                  <li>
-                    <ul>
-                      <li>
-                        Learning middle-level to low-level prgoamming lenguages
-                        (C++ and Assambly)
-                      </li>
-                      <li>Get involve in low-level programing proyects </li>
-                      <li>
-                        Scalable distributed system (Arquitecture, network,
-                        microservicess)
-                      </li>
-                      <li>Microcontrollers and Microprocessors</li>
-                      <li>AI/Machine Learning</li>
-                      <li>Pattern Designs</li>
-                      <li>Mobile cross platform apps</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-4"></div>
-            </div>
             <div className="d-flex flex-row justify-content-center bd-highlight mb-3">
               <Link to="/home" className="btn btn-sm btn-dark m-5">
                 Home{" "}
@@ -179,16 +137,8 @@ class About extends Component {
               <Link to="/home" className="btn btn-sm btn-dark m-5">
                 Contact
               </Link>
-              {/* <div className="col-12">
-              </div> */}
             </div>
           </div>
-
-          {/* <div className="container">
-            <div className="row">
-            <div className="col-lg-12"></div>
-            </div>
-          </div> */}
         </section>
       </React.Fragment>
     );

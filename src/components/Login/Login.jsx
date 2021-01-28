@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withCookies, Cookies } from "react-cookie";
 
 class Login extends Component {
   constructor(props) {
@@ -32,27 +33,23 @@ class Login extends Component {
       console.table(this.state.credentials);
       console.log(this.state.credentials);
       const userData = this.state.credentials;
-      fetch(
-        `https://ricardoall.com/api/auth/login/${userData.UserName}/${userData.Password}`,
-        {
-          method: "POST", // *GET, POST, PUT, DELETE, etc.
-          mode: "cors", // no-cors, *cors, same-origin
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            Origin: "*",
-          },
-          body: JSON.stringify(this.state.credentials),
-        }
-      )
+      fetch(`http://localhost:64183/api/auth/login/`, {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        mode: "cors", // no-cors, *cors, same-origin
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.state.credentials),
+      })
         .then((resp) => {
-          // const reponse = data.text();
-          // console.log(Response);
-          resp.json().then((resp) => {
-            console.table(resp);
-          });
+          console.log("resp");
+          console.table(resp);
         })
-        .catch((error) => console.log(error));
+        .then((data) => {
+          console.log("data");
+          console.log(data);
+        });
     } catch (error) {
       console.log(error);
       console.table(error);
