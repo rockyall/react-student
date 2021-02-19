@@ -12,7 +12,6 @@ const WebPage = () => {
   return (
     <React.Fragment>
       <NavBar></NavBar>
-      <div style={{ height: "84px" }}></div>
 
       <Switch>
         <Route

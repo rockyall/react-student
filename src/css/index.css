@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"),
+    url(../fonts/Nunito/Nunito-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Nunitolight";
+  src: local("Nunitolight"),
+    url(../fonts/Nunito/Nunito-ExtraLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NunitoRegular";
+  src: local("NunitoRegular"),
+    url(../fonts/Nunito/Nunito-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Robot";
+  src: local("Robot"),
+    url(../fonts/Roboto_Mono/static/RobotoMono-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "RobotNormal";
+  src: local("RobotNormal"),
+    url(../fonts/Roboto_Mono/static/RobotoMono-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat_Alternates";
+  src: local("Montserrat_Alternates"),
+    url(../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf)
+      format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+
+#root {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#Main-navbar {
+  transition: 0.4s;
+  padding: 5px;
+}
+
+#Main-header {
+  font-family: "Signika Negative", sans-serif;
+  background-color: #222222 !important;
+}
+
+#Title-RicardoAll {
+  font-family: "Quicksand", sans-serif;
+  padding: 50px;
+}
+
+#SubTitle-RicardoAll {
+  font-family: "Quicksand", sans-serif;
+  padding: 25px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  background-color: gray;
+}
+
+button.navbar-toggler {
+  background-color: black;
+}
+
+.section-responsive {
+  padding: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-responsive {
+    padding: 25px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+table {
+  text-align: center;
+  background-color: white;
+}
+
+header {
+  padding-top: calc(6rem + 104px);
+  padding-bottom: 6rem;
+}
+
+nav {
+  transition: top 0.3s;
+  background-color: #222222;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+section {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+div .card {
+  font-family: Nunito;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(2, 2, 2);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+ion-icon {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-family: "Quicksand", sans-serif;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  /* padding: 0; */
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  transition: 1s;
+  color: white;
+}
+.nav-link:visited {
+  opacity: 1;
+  transition: 1s;
+}
+/* 
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #e7e7e7;
+} */
+
+.h7 {
+  font-size: 14px;
+}
+
+.text-nunitolight {
+  font-family: NunitoRegular;
+}
+
+.day {
+  color: #80aca1;
+}
+
+.C-BrandIcon {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.C-BrnadIcon ion-icon {
+  color: white;
+}
+
+.navhover a:hover {
+  text-decoration: underline;
+}
+
+.header-img {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(#222222, #222222),
+    radial-gradient(#222222, #222222), url("../images/myself.jpg");
+
+  background-size: auto;
+  background-position: center;
+  position: relative;
+}
+
+.code-cropped {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.412), rgba(0, 0, 0, 0.063)),
+    radial-gradient(rgba(255, 255, 255, 0), rgb(255, 254, 254)),
+    url("../images/background/code2.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.Sub-header-img {
+  transition: 0.4s;
+  width: 30%;
+  height: 30%;
+  opacity: 0.6;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.87)),
+    url("../images/BeeingCreative1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.Sub-header-img:hover {
+  width: 35%;
+  height: 35%;
+  opacity: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.87)),
+    url("../images/BeeingCreative1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.avatar {
+  vertical-align: middle;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(90, 90, 90);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(53, 53, 53);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #151515;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 2px 0 0 0 !important;
+}
+
+td:first-child {
+  padding: 5px 0 5px 50px !important;
+}
+th:first-child {
+  padding: 2px 0 0 50px !important;
+  background-color: #555555;
+  color: white;
+}
+
+th {
+  background-color: #555555;
+  padding: 5px 0 5px 0 !important;
+  color: white;
+}

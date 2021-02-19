@@ -18,7 +18,7 @@ function App() {
     <React.Fragment>
       <Switch>
         <Route path="/login" component={Login} />
-        {/* <Route path="/finance" component={Finance} /> */}
+        <Route path="/finance" component={Finance} />
         <Route path="/" component={WebPage} />
         {/* <Route path="/nested" component={Login}></Route> */}
       </Switch>

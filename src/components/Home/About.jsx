@@ -11,7 +11,9 @@ class About extends Component {
       height: "500px",
       overflowY: "auto",
     };
-    this.letter = { backgroundColor: "#191919" };
+    this.PythonSt = { color: "#FD8922" };
+    this.JavaScriptSt = { color: "#ffe539" };
+    this.CSharpSt = { color: "#22c9dc" };
   }
 
   componentDidMount = () => {
@@ -40,33 +42,33 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section">
+        <section
+          className="section section-responsive"
+          style={{ backgroundColor: "#333333" }}
+        >
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-1 col-sm-1 col-lg-1 col-xl-1"></div>
               <div className="col-12 col-md-4 col-sm-4 col-lg-4 col-xl-4 ">
-                <div
-                  className="p-1 shadow text-center"
-                  style={{ border: "2px solid black", width: "80%" }}
-                >
+                <div className="p-1 d-flex">
                   <img
-                    src={require("../../images/myself.jpg")}
-                    style={{ maxWidth: "100%" }}
+                    src={require("../../images/profile/Me11.jpg")}
+                    style={{ maxWidth: "70%", borderRadius: 25 }}
                   ></img>
                 </div>
               </div>
               <dib className="col col-md-12 col-sm-12 col-lg col-xl">
                 <div className="row">
                   <div className="col-12">
-                    <h2 className="text-left text-dark">
+                    <h2 className="text-left" style={{ color: "#dddddd" }}>
                       A Moment to Myself
-                      <span style={{ fontSize: "10px" }}>
+                      {/* <span className="text-white" style={{ fontSize: "10px" }}>
                         - <strong>a deadmau5 song title</strong>{" "}
-                      </span>
+                      </span> */}
                     </h2>
                   </div>
                   <div className="col-12 ">
-                    <h6 className="text-dark" style={{ fontSize: 15 }}>
+                    <h6 style={{ fontSize: 15, color: "#eeeeee" }}>
                       Starting with the curiousness and the ambitious to make
                       something for my own when I started collage, now beside my
                       other activities, have become part of my daily as a
@@ -83,10 +85,13 @@ class About extends Component {
                     </h6>
                   </div>
                   <div className="col-12">
-                    <h4 className="mt-4">Lenguages</h4>
+                    <h4 className="mt-4 text-white">Lenguages</h4>
                     <hr />
                     <div className="row">
-                      <div className="col-4">CSharp (C#)</div>
+                      <div className="col-4" style={this.CSharpSt}>
+                        <ion-icon name="logo-windows"></ion-icon>
+                        CSharp (C#)
+                      </div>
                       <div className="col">
                         <div
                           id="level"
@@ -97,11 +102,16 @@ class About extends Component {
                           }}
                         />
                       </div>
-                      <div className="col-1">75%</div>
+                      <div className="col-1" style={this.CSharpSt}>
+                        75%
+                      </div>
                     </div>
                     <hr />
                     <div className="row">
-                      <div className="col-4">Python</div>
+                      <div className="col-4" style={this.PythonSt}>
+                        <ion-icon name="logo-python"></ion-icon>
+                        Python
+                      </div>
                       <div className="col">
                         <div
                           id="level2"
@@ -112,11 +122,16 @@ class About extends Component {
                           }}
                         />
                       </div>
-                      <div className="col-1">65%</div>
+                      <div className="col-1" style={this.PythonSt}>
+                        65%
+                      </div>
                     </div>
                     <hr />
                     <div className="row">
-                      <div className="col-4">JavaScript</div>
+                      <div className="col-4" style={this.JavaScriptSt}>
+                        <ion-icon name="logo-javascript"></ion-icon>
+                        JavaScript
+                      </div>
                       <div className="col">
                         <div
                           id="level3"
@@ -127,7 +142,9 @@ class About extends Component {
                           }}
                         />
                       </div>
-                      <div className="col-1">60%</div>
+                      <div className="col-1" style={this.JavaScriptSt}>
+                        60%
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -217,16 +234,102 @@ class About extends Component {
                 </ul>
               </div>
             </div> */}
-            <br />
-            <br />
-            <br />
           </div>
         </section>
-        <section>
-          <div className="container-fluid">
-            <div className="d-flex flex-row justify-content-center bd-highlight mb-3">
-              {/* <div className="code-cropped"></div> */}
+
+        <section
+          className="section"
+          style={{ padding: "100px", backgroundColor: "#444444" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-12  text-center">
+                <h2 className="text-white ">¯\_(ツ)_/¯</h2>
+              </div>
             </div>
+            {/* <div
+              className="row align-items-center justify-content-center text-dark pt-5 pb-5"
+              style={{ height: "550px", overflowY: "auto" }}
+            >
+              <div className="col-lg col-md-12">
+                <span className="font-weight-bolder h4">My daily</span>
+                <ul>
+                  <li>
+                    <span className="font-weight-bolder h6">DataBases</span>
+                    <ul>
+                      <li>MongoDB</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-weight-bolder h6">
+                      Frameworks/Libraries
+                    </span>
+                    <ul>
+                      <li>Blazor Server/WebAssambly</li>
+                      <li>ReactJS</li>
+                      <li>NodeJS/ExpressJs</li>
+                      <li className="text-muted">VueJS</li>
+                      <li>Selenium/BeautifulSoup/Request</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-weight-bolder h6">Languages</span>
+                    <ul>
+                      <li>C#</li>
+                      <li>Python</li>
+                      <li>JavaScript</li>
+                    </ul>
+                    <span className="font-weight-bolder h6">
+                      Markup Language
+                    </span>
+                    <ul>
+                      <li>HTML/CSS</li>
+                      <li>XAML (WPF)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-lg col-md-12">
+                <li class="list-unstyled">
+                  <span className="font-weight-bolder h4">
+                    Software Development
+                  </span>
+                  <ul>
+                    <li>
+                      C#/JavaScript/Python Automation. CPU bound business logic
+                    </li>
+                    <li>WPF desktop apps with the MVVM Pattern Design</li>
+                    <li>High level programming</li>
+                    <li>Web Scraping</li>
+                    <li>APIs, FullStack web apps</li>
+                  </ul>
+                </li>
+                <ul></ul>
+              </div>
+              <div className="col-lg col-md-12">
+                <span className="font-weight-bolder h4">
+                  Software development process
+                </span>
+                <ul>
+                  <li>
+                    <span className="font-weight-bolder h6">
+                      Agile development methodology
+                    </span>
+                    <ul>
+                      <li>SCRUM</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-weight-bolder h6">Tools</span>
+                    <ul>
+                      <li>Git Workflow</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div> */}
           </div>
         </section>
       </React.Fragment>

@@ -3,6 +3,12 @@ import { useHistory } from "react-router-dom";
 import anime from "animejs";
 
 const Header = () => {
+  const NavTextRight = {
+    color: "gray",
+    fontSize: 12,
+    textDecoration: "none",
+  };
+
   let history = useHistory();
 
   function handleClick() {
@@ -113,50 +119,40 @@ const Header = () => {
   return (
     <div id="Main-header">
       <div className="d-flex align-items-center justify-content-center">
-        <div style={{ height: "100vh" }}>
-          {/* <div
-            style={{
-              width: "100px",
-              height: "100px",
-              backgroundColor: "#a3e23f",
-            }}
-          ></div> */}
-        </div>
-        <div className="text-center">
-          <img
-            id="imagAvatar"
-            src={require("../../images/BeeingCreative5.png")}
-            style={{ width: 25, height: 25 }}
-            className="avatar p-1  bg-white mb-4 shadow"
-          />
-          <img
-            id="imagAvatar"
-            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_324666.png&f=1&nofb=1"
-            style={{ width: 50, height: 50 }}
-            className="avatar p-1  bg-white mb-4 "
-          />
-          <img
-            src={require("../../images/profile/Me5.jpg")}
-            style={{ width: 150, height: 150 }}
-            className="avatar p-1 shadow bg-white mb-4"
-          />
-          <img
-            id="imagAvatar"
-            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_324666.png&f=1&nofb=1"
-            style={{ width: 50, height: 50 }}
-            className="avatar p-1  bg-white mb-4 "
-          />
-          <img
-            id="imagAvatar"
-            src={require("../../images/BeeingCreative5.png")}
-            style={{ width: 25, height: 25 }}
-            className="avatar p-1  bg-white mb-4 shadow"
-          />
+        <div style={{ height: "100vh" }}></div>
+
+        <div className="card-body text-center">
           <div className="card-body text-center">
-            <h2 className="card-title text-dark">Hello, I'm Ricardo All</h2>
-            <h6 className="card-title text-dark">Software Engineer | Ceutec</h6>
-            <div>
-              <button
+            {/* <img
+              id="imagAvatar"
+              src={require("../../images/BeeingCreative5.png")}
+              style={{ width: 50, height: 50, color: "#111111" }}
+              className="avatar p-1  mb-4 "
+            /> */}
+            <img
+              src={require("../../images/profile/Me5.jpg")}
+              style={{
+                width: 300,
+                height: 300,
+                borderRadius: "50%",
+                backgroundColor: "black",
+              }}
+              className="avatar p-1 shadow-lg mb-4"
+            />
+            {/* <img
+              id="imagAvatar"
+              src={require("../../images/BeeingCreative5.png")}
+              style={{ width: 50, height: 50, color: "#111111" }}
+              className="avatar p-1 mb-4"
+            /> */}
+          </div>
+          <h2 className="card-title text-white">Hello, I'm Ricardo All</h2>
+          <h6 className="card-title" style={{ color: "#bbbbbb" }}>
+            IT Engineer | Ceutec
+          </h6>
+
+          <div>
+            {/* <button
                 id="photoMe"
                 className="btn"
                 style={{
@@ -167,11 +163,10 @@ const Header = () => {
                 }}
               >
                 Hi there! :)
-              </button>
-            </div>
-            <div></div>
+              </button> */}
           </div>
         </div>
+
         <div style={{ height: "100vh" }}></div>
       </div>
     </div>
