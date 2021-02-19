@@ -78,12 +78,14 @@ export default class NavBarCustomed extends Component {
                 >
                   Curriculum
                 </Link>
-                <Link
+                <a
+	    href="https://github.com/rockyall"
+	    target="_blank"
                   className="fab fa-github fa-lg m-2 fa-1.5x"
                   style={{ color: "gray" }}
                 >
                   {" "}
-                </Link>
+                </a>
                 {/* <Link
                 to="/unitec2"
                 className="nav-link"
