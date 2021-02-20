@@ -104,7 +104,7 @@ class About extends Component {
                   the begining of the journey...
                 </h6>
               </div>
-              <div className="col-12">
+              {/* <div className="col-12">
                 <h4 className="mt-4 text-white">Lenguages</h4>
                 <hr />
                 <div className="row">
@@ -167,6 +167,7 @@ class About extends Component {
                   </div>
                 </div>
               </div>
+             */}
             </div>
 
             {/* <div
@@ -257,7 +258,7 @@ class About extends Component {
 
         <section
           className="section"
-          style={{ padding: "50px", backgroundColor: "#444444" }}
+          style={{ padding: "50px", backgroundColor: "rgb(37 37 37)" }}
         >
           <div className="container">
             <div className="row">
