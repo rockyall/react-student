@@ -126,9 +126,9 @@ const Header = () => {
             Hello, I'm Ricardo All
           </h1>
 
-          <h4 className="card-title" style={{ color: "#bbbbbb" }}>
+          <h6 className="card-title" style={{ color: "#bbbbbb" }}>
             IT Engineer | Ceutec
-          </h4>
+          </h6>
 
           <div>
             {/* <button
