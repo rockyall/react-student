@@ -118,38 +118,17 @@ const Header = () => {
 
   return (
     <div id="Main-header">
-      <div className="d-flex align-items-center justify-content-center">
+      <div className="d-flex  align-items-center justify-content-center">
         <div style={{ height: "100vh" }}></div>
 
         <div className="card-body text-center">
-          <div className="card-body text-center">
-            {/* <img
-              id="imagAvatar"
-              src={require("../../images/BeeingCreative5.png")}
-              style={{ width: 50, height: 50, color: "#111111" }}
-              className="avatar p-1  mb-4 "
-            /> */}
-            <img
-              src={require("../../images/profile/Me5.jpg")}
-              style={{
-                width: 300,
-                height: 300,
-                borderRadius: "50%",
-                backgroundColor: "black",
-              }}
-              className="avatar p-1 shadow-lg mb-4"
-            />
-            {/* <img
-              id="imagAvatar"
-              src={require("../../images/BeeingCreative5.png")}
-              style={{ width: 50, height: 50, color: "#111111" }}
-              className="avatar p-1 mb-4"
-            /> */}
-          </div>
-          <h2 className="card-title text-white">Hello, I'm Ricardo All</h2>
-          <h6 className="card-title" style={{ color: "#bbbbbb" }}>
+          <h1 className="display-1 card-title text-dark">
+            Hello, I'm Ricardo All
+          </h1>
+
+          <h4 className="card-title" style={{ color: "#bbbbbb" }}>
             IT Engineer | Ceutec
-          </h6>
+          </h4>
 
           <div>
             {/* <button

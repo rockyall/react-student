@@ -44,21 +44,40 @@ class About extends Component {
       <React.Fragment>
         <section
           className="section section-responsive"
-          style={{ backgroundColor: "#333333" }}
+          style={{ backgroundColor: "rgb(24 24 24)" }}
         >
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-1 col-sm-1 col-lg-1 col-xl-1"></div>
-              <div className="col-12 col-md-4 col-sm-4 col-lg-4 col-xl-4 ">
-                <div className="p-1 d-flex">
-                  <img
-                    src={require("../../images/profile/Me11.jpg")}
-                    style={{ maxWidth: "70%", borderRadius: 25 }}
-                  ></img>
-                </div>
-              </div>
+
               <dib className="col col-md-12 col-sm-12 col-lg col-xl">
                 <div className="row">
+                  <div className="col-12">
+                    <div className="card-body text-center">
+                      {/* <img
+              id="imagAvatar"
+              src={require("../../images/BeeingCreative5.png")}
+              style={{ width: 50, height: 50, color: "#111111" }}
+              className="avatar p-1  mb-4 "
+            /> */}
+                      <img
+                        src={require("../../images/profile/Me5.jpg")}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          borderRadius: "50%",
+                          backgroundColor: "black",
+                        }}
+                        className="avatar p-1 shadow-lg mb-4"
+                      />
+                      {/* <img
+              id="imagAvatar"
+              src={require("../../images/BeeingCreative5.png")}
+              style={{ width: 50, height: 50, color: "#111111" }}
+              className="avatar p-1 mb-4"
+            /> */}
+                    </div>
+                  </div>
                   <div className="col-12">
                     <h2 className="text-left" style={{ color: "#dddddd" }}>
                       A Moment to Myself
@@ -239,7 +258,7 @@ class About extends Component {
 
         <section
           className="section"
-          style={{ padding: "100px", backgroundColor: "#444444" }}
+          style={{ padding: "50px", backgroundColor: "#444444" }}
         >
           <div className="container">
             <div className="row">

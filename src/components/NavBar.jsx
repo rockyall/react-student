@@ -64,7 +64,7 @@ export default class NavBarCustomed extends Component {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 navhover">
               <ul className="navbar-nav ml-auto navhover">
-                <Link
+                {/* <Link
                   to="/software"
                   className="nav-link"
                   style={this.NavTextRight}
@@ -77,12 +77,12 @@ export default class NavBarCustomed extends Component {
                   style={this.NavTextRight}
                 >
                   Curriculum
-                </Link>
+                </Link> */}
                 <a
-	    href="https://github.com/rockyall"
-	    target="_blank"
+                  href="https://github.com/rockyall"
+                  target="_blank"
                   className="fab fa-github fa-lg m-2 fa-1.5x"
-                  style={{ color: "gray" }}
+                  style={{ color: "black" }}
                 >
                   {" "}
                 </a>
